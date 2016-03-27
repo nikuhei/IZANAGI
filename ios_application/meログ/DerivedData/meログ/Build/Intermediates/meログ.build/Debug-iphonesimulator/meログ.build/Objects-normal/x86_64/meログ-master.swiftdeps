@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "69bb0cf2e02426f551ec0c0d4238f7e5"
+build_time: [512318673, 589842000]
+inputs:
+  "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/me\u30ED\u30AF\u3099/ViewController.swift": [512318673, 0]
+  "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/me\u30ED\u30AF\u3099/AppDelegate.swift": [512318227, 0]

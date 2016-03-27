@@ -1,0 +1,219 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewController"
+provides-nominal:
+- "CX10me__BjEbIl14ViewController"
+provides-member:
+- ["CX10me__BjEbIl14ViewController", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "doGreet"
+- "greetingText"
+- "greetingButton"
+depends-top-level:
+- "ViewController"
+- "UIButton"
+- !private "StringLiteralType"
+- "UIViewController"
+- "UITextField"
+depends-member:
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- ["Ps9AnyObject", "doGreet"]
+- ["Ps9AnyObject", "greetingButton"]
+- ["Ps9AnyObject", "greetingText"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- ["Ps11CVarArgType", "doGreet"]
+- ["Ps11CVarArgType", "greetingButton"]
+- ["Ps11CVarArgType", "greetingText"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "text"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "doGreet"]
+- ["Ps28CustomDebugStringConvertible", "greetingButton"]
+- ["Ps28CustomDebugStringConvertible", "greetingText"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "doGreet"]
+- ["Ps23CustomStringConvertible", "greetingButton"]
+- ["Ps23CustomStringConvertible", "greetingText"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- ["Ps9Equatable", "doGreet"]
+- ["Ps9Equatable", "greetingButton"]
+- ["Ps9Equatable", "greetingText"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "text"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- ["Ps8Hashable", "doGreet"]
+- ["Ps8Hashable", "greetingButton"]
+- ["Ps8Hashable", "greetingText"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "doGreet"]
+- ["PSo8NSCoding", "greetingButton"]
+- ["PSo8NSCoding", "greetingText"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "doGreet"]
+- ["PSo26NSExtensionRequestHandling", "greetingButton"]
+- ["PSo26NSExtensionRequestHandling", "greetingText"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UITextField"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "doGreet"]
+- ["CSo8NSObject", "greetingButton"]
+- ["CSo8NSObject", "greetingText"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "doGreet"]
+- ["PSo16NSObjectProtocol", "greetingButton"]
+- ["PSo16NSObjectProtocol", "greetingText"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Sq", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "text"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "doGreet"]
+- ["PSo21UIAppearanceContainer", "greetingButton"]
+- ["PSo21UIAppearanceContainer", "greetingText"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "doGreet"]
+- ["PSo18UIContentContainer", "greetingButton"]
+- ["PSo18UIContentContainer", "greetingText"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "text"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "text"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "doGreet"]
+- ["PSo18UIFocusEnvironment", "greetingButton"]
+- ["PSo18UIFocusEnvironment", "greetingText"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo10UIKeyInput", "text"]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UITextField"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "doGreet"]
+- ["CSo11UIResponder", "greetingButton"]
+- ["CSo11UIResponder", "greetingText"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "doGreet"]
+- ["PSo16UIStateRestoring", "greetingButton"]
+- ["PSo16UIStateRestoring", "greetingText"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo11UITextField", "text"]
+- !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "text"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "doGreet"]
+- ["PSo18UITraitEnvironment", "greetingButton"]
+- ["PSo18UITraitEnvironment", "greetingText"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "UITextField"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "doGreet"]
+- ["CSo16UIViewController", "greetingButton"]
+- ["CSo16UIViewController", "greetingText"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- ["CX10me__BjEbIl14ViewController", "UIButton"]
+- ["CX10me__BjEbIl14ViewController", "UITextField"]
+- ["CX10me__BjEbIl14ViewController", "deinit"]
+- ["CX10me__BjEbIl14ViewController", "didReceiveMemoryWarning"]
+- ["CX10me__BjEbIl14ViewController", "doGreet"]
+- ["CX10me__BjEbIl14ViewController", "greetingButton"]
+- ["CX10me__BjEbIl14ViewController", "greetingText"]
+- ["CX10me__BjEbIl14ViewController", "init"]
+- ["CX10me__BjEbIl14ViewController", "viewDidLoad"]
+- !private ["Ps12_Reflectable", "text"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Sq"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo10UIKeyInput"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- !private "CSo11UITextField"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- "CX10me__BjEbIl14ViewController"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "2c6ab21e2d25d7e1525d440c2f219ca2"

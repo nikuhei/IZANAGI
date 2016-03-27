@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D476F9D1CA6D6130050E73A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D476F9C1CA6D6130050E73A /* AppDelegate.swift */; };
+		5D476F9F1CA6D6130050E73A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D476F9E1CA6D6130050E73A /* ViewController.swift */; };
+		5D476FA21CA6D6130050E73A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D476FA01CA6D6130050E73A /* Main.storyboard */; };
+		5D476FA41CA6D6130050E73A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D476FA31CA6D6130050E73A /* Assets.xcassets */; };
+		5D476FA71CA6D6130050E73A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D476FA51CA6D6130050E73A /* LaunchScreen.storyboard */; };
+		5D476FB21CA6D6130050E73A /* me___Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D476FB11CA6D6130050E73A /* me___Tests.swift */; };
+		5D476FBD1CA6D6130050E73A /* me___UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D476FBC1CA6D6130050E73A /* me___UITests.swift */; };
+		5D476FCE1CA6D6410050E73A /* banner_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D476FCB1CA6D6410050E73A /* banner_1.png */; };
+		5D476FCF1CA6D6410050E73A /* risu.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D476FCC1CA6D6410050E73A /* risu.png */; };
+		5D476FD01CA6D6410050E73A /* risu_whole.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D476FCD1CA6D6410050E73A /* risu_whole.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D476FAE1CA6D6130050E73A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D476F911CA6D6120050E73A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D476F981CA6D6120050E73A;
+			remoteInfo = "meログ";
+		};
+		5D476FB91CA6D6130050E73A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D476F911CA6D6120050E73A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D476F981CA6D6120050E73A;
+			remoteInfo = "meログ";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D476F991CA6D6120050E73A /* meログ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meログ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D476F9C1CA6D6130050E73A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D476F9E1CA6D6130050E73A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5D476FA11CA6D6130050E73A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D476FA31CA6D6130050E73A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D476FA61CA6D6130050E73A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D476FA81CA6D6130050E73A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D476FAD1CA6D6130050E73A /* meログTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "meログTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D476FB11CA6D6130050E73A /* me___Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "me___Tests.swift"; sourceTree = "<group>"; };
+		5D476FB31CA6D6130050E73A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D476FB81CA6D6130050E73A /* meログUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "meログUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D476FBC1CA6D6130050E73A /* me___UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "me___UITests.swift"; sourceTree = "<group>"; };
+		5D476FBE1CA6D6130050E73A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D476FCB1CA6D6410050E73A /* banner_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner_1.png; sourceTree = "<group>"; };
+		5D476FCC1CA6D6410050E73A /* risu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = risu.png; sourceTree = "<group>"; };
+		5D476FCD1CA6D6410050E73A /* risu_whole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = risu_whole.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D476F961CA6D6120050E73A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D476FAA1CA6D6130050E73A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D476FB51CA6D6130050E73A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D476F901CA6D6120050E73A = {
+			isa = PBXGroup;
+			children = (
+				5D476FCA1CA6D6410050E73A /* img */,
+				5D476F9B1CA6D6130050E73A /* meログ */,
+				5D476FB01CA6D6130050E73A /* meログTests */,
+				5D476FBB1CA6D6130050E73A /* meログUITests */,
+				5D476F9A1CA6D6120050E73A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D476F9A1CA6D6120050E73A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D476F991CA6D6120050E73A /* meログ.app */,
+				5D476FAD1CA6D6130050E73A /* meログTests.xctest */,
+				5D476FB81CA6D6130050E73A /* meログUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D476F9B1CA6D6130050E73A /* meログ */ = {
+			isa = PBXGroup;
+			children = (
+				5D476F9C1CA6D6130050E73A /* AppDelegate.swift */,
+				5D476F9E1CA6D6130050E73A /* ViewController.swift */,
+				5D476FA01CA6D6130050E73A /* Main.storyboard */,
+				5D476FA31CA6D6130050E73A /* Assets.xcassets */,
+				5D476FA51CA6D6130050E73A /* LaunchScreen.storyboard */,
+				5D476FA81CA6D6130050E73A /* Info.plist */,
+			);
+			path = "meログ";
+			sourceTree = "<group>";
+		};
+		5D476FB01CA6D6130050E73A /* meログTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D476FB11CA6D6130050E73A /* me___Tests.swift */,
+				5D476FB31CA6D6130050E73A /* Info.plist */,
+			);
+			path = "meログTests";
+			sourceTree = "<group>";
+		};
+		5D476FBB1CA6D6130050E73A /* meログUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5D476FBC1CA6D6130050E73A /* me___UITests.swift */,
+				5D476FBE1CA6D6130050E73A /* Info.plist */,
+			);
+			path = "meログUITests";
+			sourceTree = "<group>";
+		};
+		5D476FCA1CA6D6410050E73A /* img */ = {
+			isa = PBXGroup;
+			children = (
+				5D476FCB1CA6D6410050E73A /* banner_1.png */,
+				5D476FCC1CA6D6410050E73A /* risu.png */,
+				5D476FCD1CA6D6410050E73A /* risu_whole.png */,
+			);
+			name = img;
+			path = "meログ/img";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D476F981CA6D6120050E73A /* meログ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D476FC11CA6D6130050E73A /* Build configuration list for PBXNativeTarget "meログ" */;
+			buildPhases = (
+				5D476F951CA6D6120050E73A /* Sources */,
+				5D476F961CA6D6120050E73A /* Frameworks */,
+				5D476F971CA6D6120050E73A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "meログ";
+			productName = "meログ";
+			productReference = 5D476F991CA6D6120050E73A /* meログ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D476FAC1CA6D6130050E73A /* meログTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D476FC41CA6D6130050E73A /* Build configuration list for PBXNativeTarget "meログTests" */;
+			buildPhases = (
+				5D476FA91CA6D6130050E73A /* Sources */,
+				5D476FAA1CA6D6130050E73A /* Frameworks */,
+				5D476FAB1CA6D6130050E73A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D476FAF1CA6D6130050E73A /* PBXTargetDependency */,
+			);
+			name = "meログTests";
+			productName = "meログTests";
+			productReference = 5D476FAD1CA6D6130050E73A /* meログTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5D476FB71CA6D6130050E73A /* meログUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D476FC71CA6D6130050E73A /* Build configuration list for PBXNativeTarget "meログUITests" */;
+			buildPhases = (
+				5D476FB41CA6D6130050E73A /* Sources */,
+				5D476FB51CA6D6130050E73A /* Frameworks */,
+				5D476FB61CA6D6130050E73A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D476FBA1CA6D6130050E73A /* PBXTargetDependency */,
+			);
+			name = "meログUITests";
+			productName = "meログUITests";
+			productReference = 5D476FB81CA6D6130050E73A /* meログUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D476F911CA6D6120050E73A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ikunyan.org;
+				TargetAttributes = {
+					5D476F981CA6D6120050E73A = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = MQNN68Z62J;
+					};
+					5D476FAC1CA6D6130050E73A = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5D476F981CA6D6120050E73A;
+					};
+					5D476FB71CA6D6130050E73A = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5D476F981CA6D6120050E73A;
+					};
+				};
+			};
+			buildConfigurationList = 5D476F941CA6D6120050E73A /* Build configuration list for PBXProject "meログ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D476F901CA6D6120050E73A;
+			productRefGroup = 5D476F9A1CA6D6120050E73A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D476F981CA6D6120050E73A /* meログ */,
+				5D476FAC1CA6D6130050E73A /* meログTests */,
+				5D476FB71CA6D6130050E73A /* meログUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D476F971CA6D6120050E73A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D476FD01CA6D6410050E73A /* risu_whole.png in Resources */,
+				5D476FA71CA6D6130050E73A /* LaunchScreen.storyboard in Resources */,
+				5D476FCF1CA6D6410050E73A /* risu.png in Resources */,
+				5D476FCE1CA6D6410050E73A /* banner_1.png in Resources */,
+				5D476FA41CA6D6130050E73A /* Assets.xcassets in Resources */,
+				5D476FA21CA6D6130050E73A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D476FAB1CA6D6130050E73A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D476FB61CA6D6130050E73A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D476F951CA6D6120050E73A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D476F9F1CA6D6130050E73A /* ViewController.swift in Sources */,
+				5D476F9D1CA6D6130050E73A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D476FA91CA6D6130050E73A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D476FB21CA6D6130050E73A /* me___Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D476FB41CA6D6130050E73A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D476FBD1CA6D6130050E73A /* me___UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D476FAF1CA6D6130050E73A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D476F981CA6D6120050E73A /* meログ */;
+			targetProxy = 5D476FAE1CA6D6130050E73A /* PBXContainerItemProxy */;
+		};
+		5D476FBA1CA6D6130050E73A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D476F981CA6D6120050E73A /* meログ */;
+			targetProxy = 5D476FB91CA6D6130050E73A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D476FA01CA6D6130050E73A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D476FA11CA6D6130050E73A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5D476FA51CA6D6130050E73A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D476FA61CA6D6130050E73A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D476FBF1CA6D6130050E73A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D476FC01CA6D6130050E73A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D476FC21CA6D6130050E73A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "meログ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ikunyan.app.lifesupport.me---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5D476FC31CA6D6130050E73A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "meログ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ikunyan.app.lifesupport.me---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5D476FC51CA6D6130050E73A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "meログTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ikunyan.app.lifesupport.me---Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/meログ.app/meログ";
+			};
+			name = Debug;
+		};
+		5D476FC61CA6D6130050E73A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "meログTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ikunyan.app.lifesupport.me---Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/meログ.app/meログ";
+			};
+			name = Release;
+		};
+		5D476FC81CA6D6130050E73A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "meログUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ikunyan.app.lifesupport.me---UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "meログ";
+			};
+			name = Debug;
+		};
+		5D476FC91CA6D6130050E73A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "meログUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ikunyan.app.lifesupport.me---UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "meログ";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D476F941CA6D6120050E73A /* Build configuration list for PBXProject "meログ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D476FBF1CA6D6130050E73A /* Debug */,
+				5D476FC01CA6D6130050E73A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D476FC11CA6D6130050E73A /* Build configuration list for PBXNativeTarget "meログ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D476FC21CA6D6130050E73A /* Debug */,
+				5D476FC31CA6D6130050E73A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5D476FC41CA6D6130050E73A /* Build configuration list for PBXNativeTarget "meログTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D476FC51CA6D6130050E73A /* Debug */,
+				5D476FC61CA6D6130050E73A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5D476FC71CA6D6130050E73A /* Build configuration list for PBXNativeTarget "meログUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D476FC81CA6D6130050E73A /* Debug */,
+				5D476FC91CA6D6130050E73A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D476F911CA6D6120050E73A /* Project object */;
+}
