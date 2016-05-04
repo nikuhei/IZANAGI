@@ -93,17 +93,21 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import ObjectiveC;
+@import CareKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
+@class UIUserNotificationSettings;
 @class UIApplication;
 @class NSObject;
 
 SWIFT_CLASS("_TtC9meロク_11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
+@property (nonatomic, strong) UIUserNotificationSettings * _Nullable settings;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary * _Nullable)launchOptions;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
@@ -113,15 +117,48 @@ SWIFT_CLASS("_TtC9meロク_11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
-@class UITextField;
+@class OCKCarePlanStore;
+
+SWIFT_CLASS("_TtC9meロク_24BaseCarePlanStoreManager")
+@interface BaseCarePlanStoreManager : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull CarePlanStoreURL;
+@property (nonatomic, readonly, strong) OCKCarePlanStore * _Nonnull store;
++ (BaseCarePlanStoreManager * _Nonnull)sharedCarePlanStoreManager;
++ (void)setSharedCarePlanStoreManager:(BaseCarePlanStoreManager * _Nonnull)value;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (OCKCarePlanStore * _Nonnull)getCarePlanStore;
+- (void)updateView;
+@end
+
+@class OCKCarePlanEvent;
+
+@interface BaseCarePlanStoreManager (SWIFT_EXTENSION(meロク_)) <OCKCarePlanStoreDelegate>
+- (void)carePlanStore:(OCKCarePlanStore * _Nonnull)store didReceiveUpdateOfEvent:(OCKCarePlanEvent * _Nonnull)event;
+@end
+
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC9meロク_23MCareCardViewController")
+@interface MCareCardViewController : OCKCareCardViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithCarePlanStore:(OCKCarePlanStore * _Nonnull)store OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIButton;
+@class UITextField;
 
 SWIFT_CLASS("_TtC9meロク_14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified greetingText;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified greetingButton;
+@property (nonatomic, readonly, strong) BaseCarePlanStoreManager * _Nonnull storeManager;
+@property (nonatomic, readonly, copy) NSString * _Nonnull greetingMessage;
+@property (nonatomic, readonly, copy) NSString * _Nonnull careCardPlanStore;
+@property (nonatomic, strong) OCKCareCardViewController * _Nullable careCardViewController;
 - (IBAction)doGreet:(UIButton * _Nonnull)sender;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;

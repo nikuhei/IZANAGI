@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7BEE7E0DF10F610C5AFB49D40537C000268C4144",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7BEE7E0DF10F610C5AFB49D40537C000268C4144" : 0,
+    "6BBB14D18404D37303A51A25CEF2D4EDDAFF0564" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C9A21810-973F-4042-812D-0BDF80CDB2E5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7BEE7E0DF10F610C5AFB49D40537C000268C4144" : "IZANAGI\/",
+    "6BBB14D18404D37303A51A25CEF2D4EDDAFF0564" : "..\/ios_project\/CareKitProjects\/carekit"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "meログ",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios_application\/meログ\/meログ.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/carekit-apple\/carekit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6BBB14D18404D37303A51A25CEF2D4EDDAFF0564"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nikuhei\/IZANAGI.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7BEE7E0DF10F610C5AFB49D40537C000268C4144"
+    }
+  ]
+}

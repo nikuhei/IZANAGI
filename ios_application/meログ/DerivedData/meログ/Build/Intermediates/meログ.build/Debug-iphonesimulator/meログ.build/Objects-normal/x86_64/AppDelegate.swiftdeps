@@ -6,24 +6,30 @@ provides-nominal:
 provides-member:
 - ["CX10me__BjEbIl11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillTerminate"
-- "applicationDidEnterBackground"
 - "window"
-- "applicationWillResignActive"
 - "application"
+- "applicationWillResignActive"
 - "applicationDidBecomeActive"
+- "settings"
 - "applicationWillEnterForeground"
+- "applicationDidEnterBackground"
+- "applicationWillTerminate"
 depends-top-level:
 - "UIApplication"
 - "UIApplicationDelegate"
-- "Bool"
-- "NSObject"
 - "AnyObject"
-- "UIWindow"
-- !private "BooleanLiteralType"
 - "UIResponder"
 - "AppDelegate"
+- "UIUserNotificationType"
+- "NSObject"
+- "Bool"
+- "UIWindow"
+- "UIUserNotificationSettings"
+- !private "Array"
+- !private "BooleanLiteralType"
 depends-member:
+- !private ["Ps9AnyObject", "UIUserNotificationSettings"]
+- !private ["Ps9AnyObject", "UIUserNotificationType"]
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
 - ["Ps9AnyObject", "applicationDidEnterBackground"]
@@ -37,12 +43,17 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillResignActive"]
 - ["Ps9AnyObject", "applicationWillTerminate"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "registerUserNotificationSettings"]
+- ["Ps9AnyObject", "settings"]
+- ["Ps9AnyObject", "type"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - ["CX10me__BjEbIl11AppDelegate", "AnyObject"]
 - ["CX10me__BjEbIl11AppDelegate", "Bool"]
 - ["CX10me__BjEbIl11AppDelegate", "NSObject"]
 - ["CX10me__BjEbIl11AppDelegate", "UIApplication"]
+- ["CX10me__BjEbIl11AppDelegate", "UIUserNotificationSettings"]
+- ["CX10me__BjEbIl11AppDelegate", "UIUserNotificationType"]
 - ["CX10me__BjEbIl11AppDelegate", "UIWindow"]
 - ["CX10me__BjEbIl11AppDelegate", "application"]
 - ["CX10me__BjEbIl11AppDelegate", "applicationDidBecomeActive"]
@@ -58,7 +69,13 @@ depends-member:
 - ["CX10me__BjEbIl11AppDelegate", "applicationWillTerminate"]
 - ["CX10me__BjEbIl11AppDelegate", "deinit"]
 - ["CX10me__BjEbIl11AppDelegate", "init"]
+- ["CX10me__BjEbIl11AppDelegate", "settings"]
+- ["CX10me__BjEbIl11AppDelegate", "type"]
 - ["CX10me__BjEbIl11AppDelegate", "window"]
+- !private ["Ps23ArrayLiteralConvertible", "Badge"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps11CVarArgType", "UIUserNotificationSettings"]
+- !private ["Ps11CVarArgType", "UIUserNotificationType"]
 - ["Ps11CVarArgType", "application"]
 - ["Ps11CVarArgType", "applicationDidBecomeActive"]
 - ["Ps11CVarArgType", "applicationDidEnterBackground"]
@@ -72,8 +89,13 @@ depends-member:
 - ["Ps11CVarArgType", "applicationWillResignActive"]
 - ["Ps11CVarArgType", "applicationWillTerminate"]
 - ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "registerUserNotificationSettings"]
+- ["Ps11CVarArgType", "settings"]
+- ["Ps11CVarArgType", "type"]
 - ["Ps11CVarArgType", "window"]
 - ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "UIUserNotificationSettings"]
+- !private ["Ps28CustomDebugStringConvertible", "UIUserNotificationType"]
 - ["Ps28CustomDebugStringConvertible", "application"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
@@ -87,8 +109,13 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "registerUserNotificationSettings"]
+- ["Ps28CustomDebugStringConvertible", "settings"]
+- ["Ps28CustomDebugStringConvertible", "type"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "UIUserNotificationSettings"]
+- !private ["Ps23CustomStringConvertible", "UIUserNotificationType"]
 - ["Ps23CustomStringConvertible", "application"]
 - ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
 - ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
@@ -102,8 +129,15 @@ depends-member:
 - ["Ps23CustomStringConvertible", "applicationWillResignActive"]
 - ["Ps23CustomStringConvertible", "applicationWillTerminate"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "registerUserNotificationSettings"]
+- ["Ps23CustomStringConvertible", "settings"]
+- ["Ps23CustomStringConvertible", "type"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Badge"]
+- !private ["Ps9Equatable", "Element"]
+- !private ["Ps9Equatable", "UIUserNotificationSettings"]
+- !private ["Ps9Equatable", "UIUserNotificationType"]
 - ["Ps9Equatable", "application"]
 - ["Ps9Equatable", "applicationDidBecomeActive"]
 - ["Ps9Equatable", "applicationDidEnterBackground"]
@@ -117,8 +151,13 @@ depends-member:
 - ["Ps9Equatable", "applicationWillResignActive"]
 - ["Ps9Equatable", "applicationWillTerminate"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "registerUserNotificationSettings"]
+- ["Ps9Equatable", "settings"]
+- ["Ps9Equatable", "type"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "UIUserNotificationSettings"]
+- !private ["Ps8Hashable", "UIUserNotificationType"]
 - ["Ps8Hashable", "application"]
 - ["Ps8Hashable", "applicationDidBecomeActive"]
 - ["Ps8Hashable", "applicationDidEnterBackground"]
@@ -132,12 +171,17 @@ depends-member:
 - ["Ps8Hashable", "applicationWillResignActive"]
 - ["Ps8Hashable", "applicationWillTerminate"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "registerUserNotificationSettings"]
+- ["Ps8Hashable", "settings"]
+- ["Ps8Hashable", "type"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "NSObject"]
 - ["CSo8NSObject", "UIApplication"]
+- ["CSo8NSObject", "UIUserNotificationSettings"]
+- ["CSo8NSObject", "UIUserNotificationType"]
 - ["CSo8NSObject", "UIWindow"]
 - ["CSo8NSObject", "application"]
 - ["CSo8NSObject", "applicationDidBecomeActive"]
@@ -152,7 +196,12 @@ depends-member:
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "registerUserNotificationSettings"]
+- ["CSo8NSObject", "settings"]
+- ["CSo8NSObject", "type"]
 - ["CSo8NSObject", "window"]
+- !private ["PSo16NSObjectProtocol", "UIUserNotificationSettings"]
+- !private ["PSo16NSObjectProtocol", "UIUserNotificationType"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -166,8 +215,20 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "registerUserNotificationSettings"]
+- ["PSo16NSObjectProtocol", "settings"]
+- ["PSo16NSObjectProtocol", "type"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["Ps13OptionSetType", "Badge"]
+- !private ["Ps13OptionSetType", "Element"]
+- !private ["Ps16RawRepresentable", "Badge"]
+- !private ["Ps16RawRepresentable", "Element"]
+- !private ["Ps14SetAlgebraType", "Badge"]
+- !private ["Ps14SetAlgebraType", "Element"]
+- !private ["CSo13UIApplication", "registerUserNotificationSettings"]
+- !private ["PSo21UIApplicationDelegate", "UIUserNotificationSettings"]
+- !private ["PSo21UIApplicationDelegate", "UIUserNotificationType"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -180,12 +241,16 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
 - ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- !private ["PSo21UIApplicationDelegate", "settings"]
+- !private ["PSo21UIApplicationDelegate", "type"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "NSObject"]
 - ["CSo11UIResponder", "UIApplication"]
+- ["CSo11UIResponder", "UIUserNotificationSettings"]
+- ["CSo11UIResponder", "UIUserNotificationType"]
 - ["CSo11UIResponder", "UIWindow"]
 - ["CSo11UIResponder", "application"]
 - ["CSo11UIResponder", "applicationDidBecomeActive"]
@@ -200,11 +265,18 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillResignActive"]
 - ["CSo11UIResponder", "applicationWillTerminate"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "registerUserNotificationSettings"]
+- ["CSo11UIResponder", "settings"]
+- ["CSo11UIResponder", "type"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
+- !private ["CSo26UIUserNotificationSettings", "init"]
+- !private ["VSC22UIUserNotificationType", "Badge"]
+- !private ["VSC22UIUserNotificationType", "Element"]
 depends-nominal:
 - "Ps9AnyObject"
 - "CX10me__BjEbIl11AppDelegate"
+- !private "Ps23ArrayLiteralConvertible"
 - "Ps11CVarArgType"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
@@ -212,8 +284,14 @@ depends-nominal:
 - "Ps8Hashable"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "Ps13OptionSetType"
+- !private "Ps16RawRepresentable"
+- !private "Ps14SetAlgebraType"
+- !private "CSo13UIApplication"
 - "PSo21UIApplicationDelegate"
 - "CSo11UIResponder"
+- !private "CSo26UIUserNotificationSettings"
+- !private "VSC22UIUserNotificationType"
 depends-dynamic-lookup:
 depends-external:
 - "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -224,4 +302,4 @@ depends-external:
 - "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "eb6deb7e97b205db2b1f8c4c6c87743c"
+interface-hash: "7b8d6812254ee2211077ed68bf979f8e"

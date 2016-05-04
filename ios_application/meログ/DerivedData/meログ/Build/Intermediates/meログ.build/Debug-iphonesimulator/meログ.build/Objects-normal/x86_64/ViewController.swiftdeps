@@ -6,187 +6,367 @@ provides-nominal:
 provides-member:
 - ["CX10me__BjEbIl14ViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "careCardPlanStore"
+- "storeManager"
+- "viewDidLoad"
+- "greetingButton"
+- "careCardViewController"
+- "greetingMessage"
 - "doGreet"
 - "greetingText"
-- "greetingButton"
 depends-top-level:
-- "ViewController"
-- "UIButton"
-- !private "StringLiteralType"
+- !private "BooleanLiteralType"
 - "UIViewController"
+- "UIButton"
+- "ViewController"
+- "BaseCarePlanStoreManager"
 - "UITextField"
+- "OCKCareCardViewController"
+- "StringLiteralType"
+- !private "MCareCardViewController"
 depends-member:
+- ["Ps9AnyObject", "BaseCarePlanStoreManager"]
+- !private ["Ps9AnyObject", "MCareCardViewController"]
+- ["Ps9AnyObject", "careCardPlanStore"]
+- ["Ps9AnyObject", "careCardViewController"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "doGreet"]
+- !private ["Ps9AnyObject", "getCarePlanStore"]
 - ["Ps9AnyObject", "greetingButton"]
+- ["Ps9AnyObject", "greetingMessage"]
 - ["Ps9AnyObject", "greetingText"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "navigationController"]
+- !private ["Ps9AnyObject", "pushViewController"]
+- ["Ps9AnyObject", "sharedCarePlanStoreManager"]
+- ["Ps9AnyObject", "storeManager"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
+- !private ["CX10me__BjEbIl24BaseCarePlanStoreManager", "getCarePlanStore"]
+- ["CX10me__BjEbIl24BaseCarePlanStoreManager", "sharedCarePlanStoreManager"]
+- ["Ps11CVarArgType", "BaseCarePlanStoreManager"]
+- !private ["Ps11CVarArgType", "MCareCardViewController"]
+- ["Ps11CVarArgType", "careCardPlanStore"]
+- ["Ps11CVarArgType", "careCardViewController"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
 - ["Ps11CVarArgType", "doGreet"]
+- !private ["Ps11CVarArgType", "getCarePlanStore"]
 - ["Ps11CVarArgType", "greetingButton"]
+- ["Ps11CVarArgType", "greetingMessage"]
 - ["Ps11CVarArgType", "greetingText"]
 - ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "navigationController"]
+- !private ["Ps11CVarArgType", "pushViewController"]
+- ["Ps11CVarArgType", "sharedCarePlanStoreManager"]
+- ["Ps11CVarArgType", "storeManager"]
 - !private ["Ps11CVarArgType", "text"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "BaseCarePlanStoreManager"]
+- !private ["Ps28CustomDebugStringConvertible", "MCareCardViewController"]
+- ["Ps28CustomDebugStringConvertible", "careCardPlanStore"]
+- ["Ps28CustomDebugStringConvertible", "careCardViewController"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps28CustomDebugStringConvertible", "doGreet"]
+- !private ["Ps28CustomDebugStringConvertible", "getCarePlanStore"]
 - ["Ps28CustomDebugStringConvertible", "greetingButton"]
+- ["Ps28CustomDebugStringConvertible", "greetingMessage"]
 - ["Ps28CustomDebugStringConvertible", "greetingText"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "pushViewController"]
+- ["Ps28CustomDebugStringConvertible", "sharedCarePlanStoreManager"]
+- ["Ps28CustomDebugStringConvertible", "storeManager"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "BaseCarePlanStoreManager"]
+- !private ["Ps23CustomStringConvertible", "MCareCardViewController"]
+- ["Ps23CustomStringConvertible", "careCardPlanStore"]
+- ["Ps23CustomStringConvertible", "careCardViewController"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "doGreet"]
+- !private ["Ps23CustomStringConvertible", "getCarePlanStore"]
 - ["Ps23CustomStringConvertible", "greetingButton"]
+- ["Ps23CustomStringConvertible", "greetingMessage"]
 - ["Ps23CustomStringConvertible", "greetingText"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
+- !private ["Ps23CustomStringConvertible", "pushViewController"]
+- ["Ps23CustomStringConvertible", "sharedCarePlanStoreManager"]
+- ["Ps23CustomStringConvertible", "storeManager"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "BaseCarePlanStoreManager"]
+- !private ["Ps9Equatable", "MCareCardViewController"]
+- ["Ps9Equatable", "careCardPlanStore"]
+- ["Ps9Equatable", "careCardViewController"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - ["Ps9Equatable", "doGreet"]
+- !private ["Ps9Equatable", "getCarePlanStore"]
 - ["Ps9Equatable", "greetingButton"]
+- ["Ps9Equatable", "greetingMessage"]
 - ["Ps9Equatable", "greetingText"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "navigationController"]
+- !private ["Ps9Equatable", "pushViewController"]
+- ["Ps9Equatable", "sharedCarePlanStoreManager"]
+- ["Ps9Equatable", "storeManager"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
+- ["Ps8Hashable", "BaseCarePlanStoreManager"]
+- !private ["Ps8Hashable", "MCareCardViewController"]
+- ["Ps8Hashable", "careCardPlanStore"]
+- ["Ps8Hashable", "careCardViewController"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - ["Ps8Hashable", "doGreet"]
+- !private ["Ps8Hashable", "getCarePlanStore"]
 - ["Ps8Hashable", "greetingButton"]
+- ["Ps8Hashable", "greetingMessage"]
 - ["Ps8Hashable", "greetingText"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "navigationController"]
+- !private ["Ps8Hashable", "pushViewController"]
+- ["Ps8Hashable", "sharedCarePlanStoreManager"]
+- ["Ps8Hashable", "storeManager"]
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
+- !private ["CX10me__BjEbIl23MCareCardViewController", "init"]
+- ["PSo8NSCoding", "BaseCarePlanStoreManager"]
+- !private ["PSo8NSCoding", "MCareCardViewController"]
+- ["PSo8NSCoding", "careCardPlanStore"]
+- ["PSo8NSCoding", "careCardViewController"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "doGreet"]
 - ["PSo8NSCoding", "greetingButton"]
+- ["PSo8NSCoding", "greetingMessage"]
 - ["PSo8NSCoding", "greetingText"]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "pushViewController"]
+- ["PSo8NSCoding", "storeManager"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "BaseCarePlanStoreManager"]
+- !private ["PSo26NSExtensionRequestHandling", "MCareCardViewController"]
+- ["PSo26NSExtensionRequestHandling", "careCardPlanStore"]
+- ["PSo26NSExtensionRequestHandling", "careCardViewController"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "doGreet"]
 - ["PSo26NSExtensionRequestHandling", "greetingButton"]
+- ["PSo26NSExtensionRequestHandling", "greetingMessage"]
 - ["PSo26NSExtensionRequestHandling", "greetingText"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
+- ["PSo26NSExtensionRequestHandling", "storeManager"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "BaseCarePlanStoreManager"]
+- !private ["CSo8NSObject", "MCareCardViewController"]
+- ["CSo8NSObject", "OCKCareCardViewController"]
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UITextField"]
+- ["CSo8NSObject", "careCardPlanStore"]
+- ["CSo8NSObject", "careCardViewController"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "doGreet"]
+- !private ["CSo8NSObject", "getCarePlanStore"]
 - ["CSo8NSObject", "greetingButton"]
+- ["CSo8NSObject", "greetingMessage"]
 - ["CSo8NSObject", "greetingText"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "pushViewController"]
+- ["CSo8NSObject", "sharedCarePlanStoreManager"]
+- ["CSo8NSObject", "storeManager"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "BaseCarePlanStoreManager"]
+- !private ["PSo16NSObjectProtocol", "MCareCardViewController"]
+- ["PSo16NSObjectProtocol", "careCardPlanStore"]
+- ["PSo16NSObjectProtocol", "careCardViewController"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "doGreet"]
+- !private ["PSo16NSObjectProtocol", "getCarePlanStore"]
 - ["PSo16NSObjectProtocol", "greetingButton"]
+- ["PSo16NSObjectProtocol", "greetingMessage"]
 - ["PSo16NSObjectProtocol", "greetingText"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "pushViewController"]
+- ["PSo16NSObjectProtocol", "sharedCarePlanStoreManager"]
+- ["PSo16NSObjectProtocol", "storeManager"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["Sq", "deinit"]
+- !private ["CSo25OCKCareCardViewController", "init"]
+- !private ["PSo24OCKCarePlanStoreDelegate", "getCarePlanStore"]
+- ["PSo24OCKCarePlanStoreDelegate", "sharedCarePlanStoreManager"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "text"]
+- ["PSo21UIAppearanceContainer", "BaseCarePlanStoreManager"]
+- !private ["PSo21UIAppearanceContainer", "MCareCardViewController"]
+- ["PSo21UIAppearanceContainer", "careCardPlanStore"]
+- ["PSo21UIAppearanceContainer", "careCardViewController"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "doGreet"]
 - ["PSo21UIAppearanceContainer", "greetingButton"]
+- ["PSo21UIAppearanceContainer", "greetingMessage"]
 - ["PSo21UIAppearanceContainer", "greetingText"]
 - ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "pushViewController"]
+- ["PSo21UIAppearanceContainer", "storeManager"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "BaseCarePlanStoreManager"]
+- !private ["PSo18UIContentContainer", "MCareCardViewController"]
+- ["PSo18UIContentContainer", "careCardPlanStore"]
+- ["PSo18UIContentContainer", "careCardViewController"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "doGreet"]
 - ["PSo18UIContentContainer", "greetingButton"]
+- ["PSo18UIContentContainer", "greetingMessage"]
 - ["PSo18UIContentContainer", "greetingText"]
 - ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "pushViewController"]
+- ["PSo18UIContentContainer", "storeManager"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "text"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "text"]
+- ["PSo18UIFocusEnvironment", "BaseCarePlanStoreManager"]
+- !private ["PSo18UIFocusEnvironment", "MCareCardViewController"]
+- ["PSo18UIFocusEnvironment", "careCardPlanStore"]
+- ["PSo18UIFocusEnvironment", "careCardViewController"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "doGreet"]
 - ["PSo18UIFocusEnvironment", "greetingButton"]
+- ["PSo18UIFocusEnvironment", "greetingMessage"]
 - ["PSo18UIFocusEnvironment", "greetingText"]
 - ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "pushViewController"]
+- ["PSo18UIFocusEnvironment", "storeManager"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo10UIKeyInput", "text"]
+- !private ["CSo22UINavigationController", "pushViewController"]
+- ["CSo11UIResponder", "BaseCarePlanStoreManager"]
+- !private ["CSo11UIResponder", "MCareCardViewController"]
+- ["CSo11UIResponder", "OCKCareCardViewController"]
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UITextField"]
+- ["CSo11UIResponder", "careCardPlanStore"]
+- ["CSo11UIResponder", "careCardViewController"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "doGreet"]
 - ["CSo11UIResponder", "greetingButton"]
+- ["CSo11UIResponder", "greetingMessage"]
 - ["CSo11UIResponder", "greetingText"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "pushViewController"]
+- ["CSo11UIResponder", "storeManager"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "BaseCarePlanStoreManager"]
+- !private ["PSo16UIStateRestoring", "MCareCardViewController"]
+- ["PSo16UIStateRestoring", "careCardPlanStore"]
+- ["PSo16UIStateRestoring", "careCardViewController"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "doGreet"]
 - ["PSo16UIStateRestoring", "greetingButton"]
+- ["PSo16UIStateRestoring", "greetingMessage"]
 - ["PSo16UIStateRestoring", "greetingText"]
 - ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "pushViewController"]
+- ["PSo16UIStateRestoring", "storeManager"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITextField", "text"]
 - !private ["PSo11UITextInput", "text"]
 - !private ["PSo17UITextInputTraits", "text"]
+- ["PSo18UITraitEnvironment", "BaseCarePlanStoreManager"]
+- !private ["PSo18UITraitEnvironment", "MCareCardViewController"]
+- ["PSo18UITraitEnvironment", "careCardPlanStore"]
+- ["PSo18UITraitEnvironment", "careCardViewController"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "doGreet"]
 - ["PSo18UITraitEnvironment", "greetingButton"]
+- ["PSo18UITraitEnvironment", "greetingMessage"]
 - ["PSo18UITraitEnvironment", "greetingText"]
 - ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "pushViewController"]
+- ["PSo18UITraitEnvironment", "storeManager"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "BaseCarePlanStoreManager"]
+- !private ["CSo16UIViewController", "MCareCardViewController"]
+- ["CSo16UIViewController", "OCKCareCardViewController"]
 - ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UITextField"]
+- ["CSo16UIViewController", "careCardPlanStore"]
+- ["CSo16UIViewController", "careCardViewController"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "doGreet"]
 - ["CSo16UIViewController", "greetingButton"]
+- ["CSo16UIViewController", "greetingMessage"]
 - ["CSo16UIViewController", "greetingText"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "navigationController"]
+- !private ["CSo16UIViewController", "pushViewController"]
+- ["CSo16UIViewController", "storeManager"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- ["CX10me__BjEbIl14ViewController", "BaseCarePlanStoreManager"]
+- !private ["CX10me__BjEbIl14ViewController", "MCareCardViewController"]
+- ["CX10me__BjEbIl14ViewController", "OCKCareCardViewController"]
 - ["CX10me__BjEbIl14ViewController", "UIButton"]
 - ["CX10me__BjEbIl14ViewController", "UITextField"]
+- ["CX10me__BjEbIl14ViewController", "careCardPlanStore"]
+- ["CX10me__BjEbIl14ViewController", "careCardViewController"]
 - ["CX10me__BjEbIl14ViewController", "deinit"]
 - ["CX10me__BjEbIl14ViewController", "didReceiveMemoryWarning"]
 - ["CX10me__BjEbIl14ViewController", "doGreet"]
 - ["CX10me__BjEbIl14ViewController", "greetingButton"]
+- ["CX10me__BjEbIl14ViewController", "greetingMessage"]
 - ["CX10me__BjEbIl14ViewController", "greetingText"]
 - ["CX10me__BjEbIl14ViewController", "init"]
+- !private ["CX10me__BjEbIl14ViewController", "navigationController"]
+- ["CX10me__BjEbIl14ViewController", "storeManager"]
 - ["CX10me__BjEbIl14ViewController", "viewDidLoad"]
 - !private ["Ps12_Reflectable", "text"]
 depends-nominal:
 - "Ps9AnyObject"
+- "CX10me__BjEbIl24BaseCarePlanStoreManager"
 - "Ps11CVarArgType"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
 - "Ps8Hashable"
+- !private "CX10me__BjEbIl23MCareCardViewController"
 - "PSo8NSCoding"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "Sq"
+- !private "CSo25OCKCareCardViewController"
+- "PSo24OCKCarePlanStoreDelegate"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -196,6 +376,7 @@ depends-nominal:
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - !private "PSo10UIKeyInput"
+- !private "CSo22UINavigationController"
 - "CSo11UIResponder"
 - "PSo16UIStateRestoring"
 - !private "CSo11UITextField"
@@ -216,4 +397,26 @@ depends-external:
 - "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "2c6ab21e2d25d7e1525d440c2f219ca2"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKDocument.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKConnectViewController.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKContact.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKGroupedBarChartView.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKInsightsViewController.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKBarChart.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKBarSeries.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKChart.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKMessageItem.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKInsightItem.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKSymptomTrackerViewController.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKCareCardViewController.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKCarePlanStore.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKCarePlanEventResult.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKCarePlanEvent.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKCarePlanActivity.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKCareSchedule.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/NSDateComponents+CarePlan.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/OCKDefines.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Headers/CareKit.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphonesimulator/CareKit.framework/Modules/module.modulemap"
+- "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Contacts.swiftmodule"
+interface-hash: "ef79c77d1e2d901b3828131b0e07bfca"

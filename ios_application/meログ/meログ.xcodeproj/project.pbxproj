@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D017E8E1CCC74F100DC34DE /* koso_risu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D017E8D1CCC74F100DC34DE /* koso_risu.jpg */; };
 		5D476F9D1CA6D6130050E73A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D476F9C1CA6D6130050E73A /* AppDelegate.swift */; };
 		5D476F9F1CA6D6130050E73A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D476F9E1CA6D6130050E73A /* ViewController.swift */; };
 		5D476FA21CA6D6130050E73A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D476FA01CA6D6130050E73A /* Main.storyboard */; };
@@ -17,9 +18,27 @@
 		5D476FCE1CA6D6410050E73A /* banner_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D476FCB1CA6D6410050E73A /* banner_1.png */; };
 		5D476FCF1CA6D6410050E73A /* risu.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D476FCC1CA6D6410050E73A /* risu.png */; };
 		5D476FD01CA6D6410050E73A /* risu_whole.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D476FCD1CA6D6410050E73A /* risu_whole.png */; };
+		5D999A071CD7B67000F02BE4 /* MCareCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D999A061CD7B67000F02BE4 /* MCareCardViewController.swift */; };
+		5D999A0D1CD96E3900F02BE4 /* BaseCarePlanStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D999A0C1CD96E3900F02BE4 /* BaseCarePlanStoreManager.swift */; };
+		5DBA6D201CD360580025E714 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D017E961CD33EEA00DC34DE /* CareKit.framework */; };
+		5DBA6D211CD360580025E714 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D017E961CD33EEA00DC34DE /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5D017E951CD33EEA00DC34DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D017E8F1CD33EEA00DC34DE /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+		5D017E971CD33EEA00DC34DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D017E8F1CD33EEA00DC34DE /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5C41C4F04EC00DD65FF;
+			remoteInfo = CareKitTests;
+		};
 		5D476FAE1CA6D6130050E73A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5D476F911CA6D6120050E73A /* Project object */;
@@ -34,9 +53,32 @@
 			remoteGlobalIDString = 5D476F981CA6D6120050E73A;
 			remoteInfo = "meログ";
 		};
+		5DBA6D221CD360580025E714 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D017E8F1CD33EEA00DC34DE /* CareKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8605A5B91C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5DBA6D241CD360580025E714 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5DBA6D211CD360580025E714 /* CareKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5D017E8D1CCC74F100DC34DE /* koso_risu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = koso_risu.jpg; sourceTree = "<group>"; };
+		5D017E8F1CD33EEA00DC34DE /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../../../../ios_project/CareKitProjects/carekit/CareKit.xcodeproj; sourceTree = "<group>"; };
 		5D476F991CA6D6120050E73A /* meログ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meログ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D476F9C1CA6D6130050E73A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D476F9E1CA6D6130050E73A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +95,8 @@
 		5D476FCB1CA6D6410050E73A /* banner_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner_1.png; sourceTree = "<group>"; };
 		5D476FCC1CA6D6410050E73A /* risu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = risu.png; sourceTree = "<group>"; };
 		5D476FCD1CA6D6410050E73A /* risu_whole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = risu_whole.png; sourceTree = "<group>"; };
+		5D999A061CD7B67000F02BE4 /* MCareCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCareCardViewController.swift; sourceTree = "<group>"; };
+		5D999A0C1CD96E3900F02BE4 /* BaseCarePlanStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCarePlanStoreManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DBA6D201CD360580025E714 /* CareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,9 +125,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D017E901CD33EEA00DC34DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D017E961CD33EEA00DC34DE /* CareKit.framework */,
+				5D017E981CD33EEA00DC34DE /* CareKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5D476F901CA6D6120050E73A = {
 			isa = PBXGroup;
 			children = (
+				5D017E8F1CD33EEA00DC34DE /* CareKit.xcodeproj */,
 				5D476FCA1CA6D6410050E73A /* img */,
 				5D476F9B1CA6D6130050E73A /* meログ */,
 				5D476FB01CA6D6130050E73A /* meログTests */,
@@ -104,8 +159,10 @@
 		5D476F9B1CA6D6130050E73A /* meログ */ = {
 			isa = PBXGroup;
 			children = (
+				5D999A0B1CD96E0E00F02BE4 /* common */,
 				5D476F9C1CA6D6130050E73A /* AppDelegate.swift */,
 				5D476F9E1CA6D6130050E73A /* ViewController.swift */,
+				5D999A061CD7B67000F02BE4 /* MCareCardViewController.swift */,
 				5D476FA01CA6D6130050E73A /* Main.storyboard */,
 				5D476FA31CA6D6130050E73A /* Assets.xcassets */,
 				5D476FA51CA6D6130050E73A /* LaunchScreen.storyboard */,
@@ -135,12 +192,21 @@
 		5D476FCA1CA6D6410050E73A /* img */ = {
 			isa = PBXGroup;
 			children = (
+				5D017E8D1CCC74F100DC34DE /* koso_risu.jpg */,
 				5D476FCB1CA6D6410050E73A /* banner_1.png */,
 				5D476FCC1CA6D6410050E73A /* risu.png */,
 				5D476FCD1CA6D6410050E73A /* risu_whole.png */,
 			);
 			name = img;
 			path = "meログ/img";
+			sourceTree = "<group>";
+		};
+		5D999A0B1CD96E0E00F02BE4 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				5D999A0C1CD96E3900F02BE4 /* BaseCarePlanStoreManager.swift */,
+			);
+			name = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,10 +219,12 @@
 				5D476F951CA6D6120050E73A /* Sources */,
 				5D476F961CA6D6120050E73A /* Frameworks */,
 				5D476F971CA6D6120050E73A /* Resources */,
+				5DBA6D241CD360580025E714 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5DBA6D231CD360580025E714 /* PBXTargetDependency */,
 			);
 			name = "meログ";
 			productName = "meログ";
@@ -234,6 +302,12 @@
 			mainGroup = 5D476F901CA6D6120050E73A;
 			productRefGroup = 5D476F9A1CA6D6120050E73A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5D017E901CD33EEA00DC34DE /* Products */;
+					ProjectRef = 5D017E8F1CD33EEA00DC34DE /* CareKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5D476F981CA6D6120050E73A /* meログ */,
@@ -242,6 +316,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5D017E961CD33EEA00DC34DE /* CareKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CareKit.framework;
+			remoteRef = 5D017E951CD33EEA00DC34DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5D017E981CD33EEA00DC34DE /* CareKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareKitTests.xctest;
+			remoteRef = 5D017E971CD33EEA00DC34DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5D476F971CA6D6120050E73A /* Resources */ = {
@@ -254,6 +345,7 @@
 				5D476FCE1CA6D6410050E73A /* banner_1.png in Resources */,
 				5D476FA41CA6D6130050E73A /* Assets.xcassets in Resources */,
 				5D476FA21CA6D6130050E73A /* Main.storyboard in Resources */,
+				5D017E8E1CCC74F100DC34DE /* koso_risu.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +371,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D476F9F1CA6D6130050E73A /* ViewController.swift in Sources */,
+				5D999A071CD7B67000F02BE4 /* MCareCardViewController.swift in Sources */,
+				5D999A0D1CD96E3900F02BE4 /* BaseCarePlanStoreManager.swift in Sources */,
 				5D476F9D1CA6D6130050E73A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +405,11 @@
 			isa = PBXTargetDependency;
 			target = 5D476F981CA6D6120050E73A /* meログ */;
 			targetProxy = 5D476FB91CA6D6130050E73A /* PBXContainerItemProxy */;
+		};
+		5DBA6D231CD360580025E714 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CareKit;
+			targetProxy = 5DBA6D221CD360580025E714 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -508,6 +607,7 @@
 				5D476FC31CA6D6130050E73A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D476FC41CA6D6130050E73A /* Build configuration list for PBXNativeTarget "meログTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +616,7 @@
 				5D476FC61CA6D6130050E73A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D476FC71CA6D6130050E73A /* Build configuration list for PBXNativeTarget "meログUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +625,7 @@
 				5D476FC91CA6D6130050E73A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
