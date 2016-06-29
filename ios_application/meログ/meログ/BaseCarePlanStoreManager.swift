@@ -12,6 +12,12 @@ import CareKit
 class BaseCarePlanStoreManager: NSObject {
     
     let CarePlanStoreURL = "MeLogCarePlanStore"
+    let MeLogMedicationIdentifier = "MeLogMedication"
+    
+    // Medication unit
+    let ThermoTitle = "体温測定"
+    let ThermoText = "℃"
+    let ThermoInstructions = "Take once daily."
     
     let store: OCKCarePlanStore
     
@@ -37,6 +43,10 @@ class BaseCarePlanStoreManager: NSObject {
     
     func getCarePlanStore() -> OCKCarePlanStore {
         return store
+    }
+    
+    func getMedicationIdentifier() -> String {
+        return MeLogMedicationIdentifier
     }
     
     func updateView() {

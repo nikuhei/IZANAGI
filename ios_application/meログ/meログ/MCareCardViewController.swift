@@ -10,11 +10,13 @@ import UIKit
 import CareKit
 
 class MCareCardViewController: OCKCareCardViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let careCardPlanStore = self.store
+        
     }
 
     override func didReceiveMemoryWarning() {

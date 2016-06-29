@@ -21,7 +21,24 @@ class ViewController: UIViewController {
 
     @IBAction func doGreet(sender: UIButton) {
         let store = storeManager.getCarePlanStore()
+
+        let startDate = NSDateComponents(year: 2016, month: 5, day: 1)
+        let onceADay = OCKCareSchedule.dailyScheduleWithStartDate(startDate, occurrencesPerDay: 1)
         
+        let medication = OCKCarePlanActivity(identifier: storeManager.getMedicationIdentifier(), groupIdentifier: nil, type: .Intervention, title: "体温測定", text: "℃", tintColor: nil, instructions: "毎日起床時に測定して下さい。", imageURL: nil, schedule: onceADay, resultResettable: true, userInfo: nil)
+        let activity = OCKCarePlanActivity(identifier: "MeLogActivityStore", groupIdentifier: nil, type: .Intervention, title: "運動記録", text: "歩", tintColor: nil, instructions: "毎日就寝前に記録して下さい。", imageURL: nil, schedule: onceADay, resultResettable: true, userInfo: nil)
+
+        store.addActivity(medication)  { success, error in
+            if !success {
+                print(error?.localizedDescription)
+            }
+        }
+        store.addActivity(activity)  { success, error in
+            if !success {
+                print(error?.localizedDescription)
+            }
+        }
+
         careCardViewController = MCareCardViewController(carePlanStore: store)
         self.navigationController?.pushViewController(careCardViewController!, animated: true)
     }

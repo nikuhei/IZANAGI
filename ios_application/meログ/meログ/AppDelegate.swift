@@ -17,11 +17,64 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        if let option = launchOptions {
+            
+            let notification = launchOptions?[UIApplicationLaunchOptionsLocalNotificationKey] as! UILocalNotification!
+            if (notification != nil) {
+                //notificationを実行します
+                var alert = UIAlertView();
+                alert.title = "LocalNotification経由で起動しました";
+                alert.addButtonWithTitle("OK")
+                alert.show();
+                
+                //Notification消去.
+                UIApplication.sharedApplication().cancelLocalNotification(notification);
+            }
+        }
+        
         type = UIUserNotificationType.Badge
-        settings = UIUserNotificationSettings(forTypes: [.Badge], categories: nil)
+        settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
         application.registerUserNotificationSettings(settings!)
+        
+        // 毎日21時に服薬確認アラート
+        let now = NSDate()
+        print(now);// -> 2015-09-15 23:06:47 +0000
+        let calendar = NSCalendar(identifier: NSCalendarIdentifierGregorian)
+        let comps:NSDateComponents = calendar!.components([.Year, .Month, .Day],fromDate: now)
+        comps.calendar = calendar;
+        comps.hour = 21;
+        
+        let now2 = comps.date;
+        print(now2);// -> Optional(0000-12-31 22:47:48 +0000)
+        
+        let med_notification = UILocalNotification()
+        med_notification.alertBody = "今日はもうお薬飲んだ？"
+        med_notification.alertAction = "OK"
+        med_notification.timeZone = NSTimeZone.defaultTimeZone();
+        med_notification.fireDate = now2;
+        med_notification.repeatInterval = .Day;
+        med_notification.soundName = UILocalNotificationDefaultSoundName
+        UIApplication.sharedApplication().scheduleLocalNotification(med_notification)
 
         return true
+    }
+    
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        
+        let alert = UIAlertView();
+        alert.title = "受け取りました";
+        alert.message = notification.alertBody;
+        alert.addButtonWithTitle(notification.alertAction!);
+        alert.show();
+        
+    }
+    
+    func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, completionHandler: () -> Void) {
+        var alert = UIAlertView();
+        alert.title = "非アクティブなのに受け取りました";
+        alert.message = notification.alertBody;
+        alert.addButtonWithTitle(notification.alertAction!);
+        alert.show();
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -45,7 +98,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 

@@ -6,38 +6,52 @@ provides-nominal:
 provides-member:
 - ["CX10me__BjEbIl14ViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "careCardPlanStore"
+- "greetingButton"
+- "doGreet"
+- "greetingMessage"
 - "storeManager"
 - "viewDidLoad"
-- "greetingButton"
-- "careCardViewController"
-- "greetingMessage"
-- "doGreet"
+- "didReceiveMemoryWarning"
+- "careCardPlanStore"
 - "greetingText"
+- "careCardViewController"
 depends-top-level:
 - !private "BooleanLiteralType"
-- "UIViewController"
-- "UIButton"
-- "ViewController"
+- !private "OCKCareSchedule"
 - "BaseCarePlanStoreManager"
-- "UITextField"
 - "OCKCareCardViewController"
-- "StringLiteralType"
+- "ViewController"
+- "UIButton"
+- "UIViewController"
+- !private "print"
+- !private "NSDateComponents"
 - !private "MCareCardViewController"
+- "StringLiteralType"
+- "UITextField"
+- !private "UnicodeScalarType"
+- !private "OCKCarePlanActivity"
+- !private "!"
 depends-member:
 - ["Ps9AnyObject", "BaseCarePlanStoreManager"]
 - !private ["Ps9AnyObject", "MCareCardViewController"]
+- !private ["Ps9AnyObject", "NSDateComponents"]
+- !private ["Ps9AnyObject", "OCKCarePlanActivity"]
+- !private ["Ps9AnyObject", "OCKCareSchedule"]
+- !private ["Ps9AnyObject", "addActivity"]
 - ["Ps9AnyObject", "careCardPlanStore"]
 - ["Ps9AnyObject", "careCardViewController"]
+- !private ["Ps9AnyObject", "dailyScheduleWithStartDate"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "doGreet"]
 - !private ["Ps9AnyObject", "getCarePlanStore"]
+- !private ["Ps9AnyObject", "getMedicationIdentifier"]
 - ["Ps9AnyObject", "greetingButton"]
 - ["Ps9AnyObject", "greetingMessage"]
 - ["Ps9AnyObject", "greetingText"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "localizedDescription"]
 - !private ["Ps9AnyObject", "navigationController"]
+- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "pushViewController"]
 - ["Ps9AnyObject", "sharedCarePlanStoreManager"]
 - ["Ps9AnyObject", "storeManager"]
@@ -45,19 +59,31 @@ depends-member:
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
 - !private ["CX10me__BjEbIl24BaseCarePlanStoreManager", "getCarePlanStore"]
+- !private ["CX10me__BjEbIl24BaseCarePlanStoreManager", "getMedicationIdentifier"]
 - ["CX10me__BjEbIl24BaseCarePlanStoreManager", "sharedCarePlanStoreManager"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - ["Ps11CVarArgType", "BaseCarePlanStoreManager"]
 - !private ["Ps11CVarArgType", "MCareCardViewController"]
+- !private ["Ps11CVarArgType", "NSDateComponents"]
+- !private ["Ps11CVarArgType", "OCKCarePlanActivity"]
+- !private ["Ps11CVarArgType", "OCKCareSchedule"]
+- !private ["Ps11CVarArgType", "addActivity"]
 - ["Ps11CVarArgType", "careCardPlanStore"]
 - ["Ps11CVarArgType", "careCardViewController"]
+- !private ["Ps11CVarArgType", "dailyScheduleWithStartDate"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
 - ["Ps11CVarArgType", "doGreet"]
 - !private ["Ps11CVarArgType", "getCarePlanStore"]
+- !private ["Ps11CVarArgType", "getMedicationIdentifier"]
 - ["Ps11CVarArgType", "greetingButton"]
 - ["Ps11CVarArgType", "greetingMessage"]
 - ["Ps11CVarArgType", "greetingText"]
 - ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "localizedDescription"]
 - !private ["Ps11CVarArgType", "navigationController"]
+- !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "pushViewController"]
 - ["Ps11CVarArgType", "sharedCarePlanStoreManager"]
 - ["Ps11CVarArgType", "storeManager"]
@@ -66,16 +92,24 @@ depends-member:
 - ["Ps11CVarArgType", ""]
 - ["Ps28CustomDebugStringConvertible", "BaseCarePlanStoreManager"]
 - !private ["Ps28CustomDebugStringConvertible", "MCareCardViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "NSDateComponents"]
+- !private ["Ps28CustomDebugStringConvertible", "OCKCarePlanActivity"]
+- !private ["Ps28CustomDebugStringConvertible", "OCKCareSchedule"]
+- !private ["Ps28CustomDebugStringConvertible", "addActivity"]
 - ["Ps28CustomDebugStringConvertible", "careCardPlanStore"]
 - ["Ps28CustomDebugStringConvertible", "careCardViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "dailyScheduleWithStartDate"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps28CustomDebugStringConvertible", "doGreet"]
 - !private ["Ps28CustomDebugStringConvertible", "getCarePlanStore"]
+- !private ["Ps28CustomDebugStringConvertible", "getMedicationIdentifier"]
 - ["Ps28CustomDebugStringConvertible", "greetingButton"]
 - ["Ps28CustomDebugStringConvertible", "greetingMessage"]
 - ["Ps28CustomDebugStringConvertible", "greetingText"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "localizedDescription"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "pushViewController"]
 - ["Ps28CustomDebugStringConvertible", "sharedCarePlanStoreManager"]
 - ["Ps28CustomDebugStringConvertible", "storeManager"]
@@ -84,16 +118,25 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["Ps23CustomStringConvertible", "BaseCarePlanStoreManager"]
 - !private ["Ps23CustomStringConvertible", "MCareCardViewController"]
+- !private ["Ps23CustomStringConvertible", "NSDateComponents"]
+- !private ["Ps23CustomStringConvertible", "OCKCarePlanActivity"]
+- !private ["Ps23CustomStringConvertible", "OCKCareSchedule"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addActivity"]
 - ["Ps23CustomStringConvertible", "careCardPlanStore"]
 - ["Ps23CustomStringConvertible", "careCardViewController"]
+- !private ["Ps23CustomStringConvertible", "dailyScheduleWithStartDate"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "doGreet"]
 - !private ["Ps23CustomStringConvertible", "getCarePlanStore"]
+- !private ["Ps23CustomStringConvertible", "getMedicationIdentifier"]
 - ["Ps23CustomStringConvertible", "greetingButton"]
 - ["Ps23CustomStringConvertible", "greetingMessage"]
 - ["Ps23CustomStringConvertible", "greetingText"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "localizedDescription"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
+- !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "pushViewController"]
 - ["Ps23CustomStringConvertible", "sharedCarePlanStoreManager"]
 - ["Ps23CustomStringConvertible", "storeManager"]
@@ -101,35 +144,56 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
 - ["Ps9Equatable", "BaseCarePlanStoreManager"]
+- !private ["Ps9Equatable", "Intervention"]
 - !private ["Ps9Equatable", "MCareCardViewController"]
+- !private ["Ps9Equatable", "NSDateComponents"]
+- !private ["Ps9Equatable", "OCKCarePlanActivity"]
+- !private ["Ps9Equatable", "OCKCareSchedule"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addActivity"]
 - ["Ps9Equatable", "careCardPlanStore"]
 - ["Ps9Equatable", "careCardViewController"]
+- !private ["Ps9Equatable", "dailyScheduleWithStartDate"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - ["Ps9Equatable", "doGreet"]
 - !private ["Ps9Equatable", "getCarePlanStore"]
+- !private ["Ps9Equatable", "getMedicationIdentifier"]
 - ["Ps9Equatable", "greetingButton"]
 - ["Ps9Equatable", "greetingMessage"]
 - ["Ps9Equatable", "greetingText"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "localizedDescription"]
 - !private ["Ps9Equatable", "navigationController"]
+- !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "pushViewController"]
 - ["Ps9Equatable", "sharedCarePlanStoreManager"]
 - ["Ps9Equatable", "storeManager"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
+- !private ["Ps9ErrorType", "localizedDescription"]
 - ["Ps8Hashable", "BaseCarePlanStoreManager"]
+- !private ["Ps8Hashable", "Intervention"]
 - !private ["Ps8Hashable", "MCareCardViewController"]
+- !private ["Ps8Hashable", "NSDateComponents"]
+- !private ["Ps8Hashable", "OCKCarePlanActivity"]
+- !private ["Ps8Hashable", "OCKCareSchedule"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addActivity"]
 - ["Ps8Hashable", "careCardPlanStore"]
 - ["Ps8Hashable", "careCardViewController"]
+- !private ["Ps8Hashable", "dailyScheduleWithStartDate"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - ["Ps8Hashable", "doGreet"]
 - !private ["Ps8Hashable", "getCarePlanStore"]
+- !private ["Ps8Hashable", "getMedicationIdentifier"]
 - ["Ps8Hashable", "greetingButton"]
 - ["Ps8Hashable", "greetingMessage"]
 - ["Ps8Hashable", "greetingText"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "localizedDescription"]
 - !private ["Ps8Hashable", "navigationController"]
+- !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "pushViewController"]
 - ["Ps8Hashable", "sharedCarePlanStoreManager"]
 - ["Ps8Hashable", "storeManager"]
@@ -139,22 +203,36 @@ depends-member:
 - !private ["CX10me__BjEbIl23MCareCardViewController", "init"]
 - ["PSo8NSCoding", "BaseCarePlanStoreManager"]
 - !private ["PSo8NSCoding", "MCareCardViewController"]
+- !private ["PSo8NSCoding", "NSDateComponents"]
+- !private ["PSo8NSCoding", "OCKCarePlanActivity"]
+- !private ["PSo8NSCoding", "OCKCareSchedule"]
 - ["PSo8NSCoding", "careCardPlanStore"]
 - ["PSo8NSCoding", "careCardViewController"]
+- !private ["PSo8NSCoding", "dailyScheduleWithStartDate"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "doGreet"]
 - ["PSo8NSCoding", "greetingButton"]
 - ["PSo8NSCoding", "greetingMessage"]
 - ["PSo8NSCoding", "greetingText"]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "localizedDescription"]
 - !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "pushViewController"]
 - ["PSo8NSCoding", "storeManager"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "dailyScheduleWithStartDate"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "localizedDescription"]
+- !private ["CSo16NSDateComponents", "init"]
+- !private ["CSo7NSError", "localizedDescription"]
 - ["PSo26NSExtensionRequestHandling", "BaseCarePlanStoreManager"]
 - !private ["PSo26NSExtensionRequestHandling", "MCareCardViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "NSDateComponents"]
+- !private ["PSo26NSExtensionRequestHandling", "OCKCarePlanActivity"]
+- !private ["PSo26NSExtensionRequestHandling", "OCKCareSchedule"]
 - ["PSo26NSExtensionRequestHandling", "careCardPlanStore"]
 - ["PSo26NSExtensionRequestHandling", "careCardViewController"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
@@ -164,25 +242,34 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "greetingText"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
 - ["PSo26NSExtensionRequestHandling", "storeManager"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["CSo8NSObject", "BaseCarePlanStoreManager"]
 - !private ["CSo8NSObject", "MCareCardViewController"]
+- !private ["CSo8NSObject", "NSDateComponents"]
 - ["CSo8NSObject", "OCKCareCardViewController"]
+- !private ["CSo8NSObject", "OCKCarePlanActivity"]
+- !private ["CSo8NSObject", "OCKCareSchedule"]
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UITextField"]
+- !private ["CSo8NSObject", "addActivity"]
 - ["CSo8NSObject", "careCardPlanStore"]
 - ["CSo8NSObject", "careCardViewController"]
+- !private ["CSo8NSObject", "dailyScheduleWithStartDate"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "doGreet"]
 - !private ["CSo8NSObject", "getCarePlanStore"]
+- !private ["CSo8NSObject", "getMedicationIdentifier"]
 - ["CSo8NSObject", "greetingButton"]
 - ["CSo8NSObject", "greetingMessage"]
 - ["CSo8NSObject", "greetingText"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "localizedDescription"]
 - !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "pushViewController"]
 - ["CSo8NSObject", "sharedCarePlanStoreManager"]
 - ["CSo8NSObject", "storeManager"]
@@ -190,29 +277,50 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "BaseCarePlanStoreManager"]
 - !private ["PSo16NSObjectProtocol", "MCareCardViewController"]
+- !private ["PSo16NSObjectProtocol", "NSDateComponents"]
+- !private ["PSo16NSObjectProtocol", "OCKCarePlanActivity"]
+- !private ["PSo16NSObjectProtocol", "OCKCareSchedule"]
+- !private ["PSo16NSObjectProtocol", "addActivity"]
 - ["PSo16NSObjectProtocol", "careCardPlanStore"]
 - ["PSo16NSObjectProtocol", "careCardViewController"]
+- !private ["PSo16NSObjectProtocol", "dailyScheduleWithStartDate"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "doGreet"]
 - !private ["PSo16NSObjectProtocol", "getCarePlanStore"]
+- !private ["PSo16NSObjectProtocol", "getMedicationIdentifier"]
 - ["PSo16NSObjectProtocol", "greetingButton"]
 - ["PSo16NSObjectProtocol", "greetingMessage"]
 - ["PSo16NSObjectProtocol", "greetingText"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "localizedDescription"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "pushViewController"]
 - ["PSo16NSObjectProtocol", "sharedCarePlanStoreManager"]
 - ["PSo16NSObjectProtocol", "storeManager"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "dailyScheduleWithStartDate"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "localizedDescription"]
 - !private ["CSo25OCKCareCardViewController", "init"]
+- !private ["CSo19OCKCarePlanActivity", "init"]
+- !private ["OSC23OCKCarePlanActivityType", "Intervention"]
+- !private ["CSo16OCKCarePlanStore", "addActivity"]
 - !private ["PSo24OCKCarePlanStoreDelegate", "getCarePlanStore"]
+- !private ["PSo24OCKCarePlanStoreDelegate", "getMedicationIdentifier"]
 - ["PSo24OCKCarePlanStoreDelegate", "sharedCarePlanStoreManager"]
+- !private ["CSo15OCKCareSchedule", "dailyScheduleWithStartDate"]
+- !private ["Sq", "deinit"]
+- !private ["Ps16RawRepresentable", "Intervention"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "text"]
 - ["PSo21UIAppearanceContainer", "BaseCarePlanStoreManager"]
 - !private ["PSo21UIAppearanceContainer", "MCareCardViewController"]
+- !private ["PSo21UIAppearanceContainer", "NSDateComponents"]
+- !private ["PSo21UIAppearanceContainer", "OCKCarePlanActivity"]
+- !private ["PSo21UIAppearanceContainer", "OCKCareSchedule"]
 - ["PSo21UIAppearanceContainer", "careCardPlanStore"]
 - ["PSo21UIAppearanceContainer", "careCardViewController"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
@@ -222,6 +330,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "greetingText"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "pushViewController"]
 - ["PSo21UIAppearanceContainer", "storeManager"]
 - !private ["PSo21UIAppearanceContainer", "text"]
@@ -229,6 +338,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", ""]
 - ["PSo18UIContentContainer", "BaseCarePlanStoreManager"]
 - !private ["PSo18UIContentContainer", "MCareCardViewController"]
+- !private ["PSo18UIContentContainer", "NSDateComponents"]
+- !private ["PSo18UIContentContainer", "OCKCarePlanActivity"]
+- !private ["PSo18UIContentContainer", "OCKCareSchedule"]
 - ["PSo18UIContentContainer", "careCardPlanStore"]
 - ["PSo18UIContentContainer", "careCardViewController"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
@@ -238,6 +350,7 @@ depends-member:
 - ["PSo18UIContentContainer", "greetingText"]
 - ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "pushViewController"]
 - ["PSo18UIContentContainer", "storeManager"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
@@ -247,6 +360,9 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - ["PSo18UIFocusEnvironment", "BaseCarePlanStoreManager"]
 - !private ["PSo18UIFocusEnvironment", "MCareCardViewController"]
+- !private ["PSo18UIFocusEnvironment", "NSDateComponents"]
+- !private ["PSo18UIFocusEnvironment", "OCKCarePlanActivity"]
+- !private ["PSo18UIFocusEnvironment", "OCKCareSchedule"]
 - ["PSo18UIFocusEnvironment", "careCardPlanStore"]
 - ["PSo18UIFocusEnvironment", "careCardViewController"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
@@ -256,6 +372,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "greetingText"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "pushViewController"]
 - ["PSo18UIFocusEnvironment", "storeManager"]
 - !private ["PSo18UIFocusEnvironment", "text"]
@@ -265,7 +382,10 @@ depends-member:
 - !private ["CSo22UINavigationController", "pushViewController"]
 - ["CSo11UIResponder", "BaseCarePlanStoreManager"]
 - !private ["CSo11UIResponder", "MCareCardViewController"]
+- !private ["CSo11UIResponder", "NSDateComponents"]
 - ["CSo11UIResponder", "OCKCareCardViewController"]
+- !private ["CSo11UIResponder", "OCKCarePlanActivity"]
+- !private ["CSo11UIResponder", "OCKCareSchedule"]
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UITextField"]
 - ["CSo11UIResponder", "careCardPlanStore"]
@@ -277,12 +397,16 @@ depends-member:
 - ["CSo11UIResponder", "greetingText"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "pushViewController"]
 - ["CSo11UIResponder", "storeManager"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "BaseCarePlanStoreManager"]
 - !private ["PSo16UIStateRestoring", "MCareCardViewController"]
+- !private ["PSo16UIStateRestoring", "NSDateComponents"]
+- !private ["PSo16UIStateRestoring", "OCKCarePlanActivity"]
+- !private ["PSo16UIStateRestoring", "OCKCareSchedule"]
 - ["PSo16UIStateRestoring", "careCardPlanStore"]
 - ["PSo16UIStateRestoring", "careCardViewController"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
@@ -292,6 +416,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "greetingText"]
 - ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "pushViewController"]
 - ["PSo16UIStateRestoring", "storeManager"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
@@ -301,6 +426,9 @@ depends-member:
 - !private ["PSo17UITextInputTraits", "text"]
 - ["PSo18UITraitEnvironment", "BaseCarePlanStoreManager"]
 - !private ["PSo18UITraitEnvironment", "MCareCardViewController"]
+- !private ["PSo18UITraitEnvironment", "NSDateComponents"]
+- !private ["PSo18UITraitEnvironment", "OCKCarePlanActivity"]
+- !private ["PSo18UITraitEnvironment", "OCKCareSchedule"]
 - ["PSo18UITraitEnvironment", "careCardPlanStore"]
 - ["PSo18UITraitEnvironment", "careCardViewController"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
@@ -310,6 +438,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "greetingText"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "pushViewController"]
 - ["PSo18UITraitEnvironment", "storeManager"]
 - !private ["PSo18UITraitEnvironment", "text"]
@@ -318,7 +447,10 @@ depends-member:
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "BaseCarePlanStoreManager"]
 - !private ["CSo16UIViewController", "MCareCardViewController"]
+- !private ["CSo16UIViewController", "NSDateComponents"]
 - ["CSo16UIViewController", "OCKCareCardViewController"]
+- !private ["CSo16UIViewController", "OCKCarePlanActivity"]
+- !private ["CSo16UIViewController", "OCKCareSchedule"]
 - ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UITextField"]
 - ["CSo16UIViewController", "careCardPlanStore"]
@@ -330,13 +462,17 @@ depends-member:
 - ["CSo16UIViewController", "greetingText"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "navigationController"]
+- !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "pushViewController"]
 - ["CSo16UIViewController", "storeManager"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - ["CX10me__BjEbIl14ViewController", "BaseCarePlanStoreManager"]
 - !private ["CX10me__BjEbIl14ViewController", "MCareCardViewController"]
+- !private ["CX10me__BjEbIl14ViewController", "NSDateComponents"]
 - ["CX10me__BjEbIl14ViewController", "OCKCareCardViewController"]
+- !private ["CX10me__BjEbIl14ViewController", "OCKCarePlanActivity"]
+- !private ["CX10me__BjEbIl14ViewController", "OCKCareSchedule"]
 - ["CX10me__BjEbIl14ViewController", "UIButton"]
 - ["CX10me__BjEbIl14ViewController", "UITextField"]
 - ["CX10me__BjEbIl14ViewController", "careCardPlanStore"]
@@ -349,24 +485,42 @@ depends-member:
 - ["CX10me__BjEbIl14ViewController", "greetingText"]
 - ["CX10me__BjEbIl14ViewController", "init"]
 - !private ["CX10me__BjEbIl14ViewController", "navigationController"]
+- !private ["CX10me__BjEbIl14ViewController", "print"]
 - ["CX10me__BjEbIl14ViewController", "storeManager"]
 - ["CX10me__BjEbIl14ViewController", "viewDidLoad"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "text"]
 depends-nominal:
 - "Ps9AnyObject"
 - "CX10me__BjEbIl24BaseCarePlanStoreManager"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
 - "Ps11CVarArgType"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "Ps9ErrorType"
 - "Ps8Hashable"
 - !private "CX10me__BjEbIl23MCareCardViewController"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo16NSDateComponents"
+- !private "CSo7NSError"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
 - !private "CSo25OCKCareCardViewController"
+- !private "CSo19OCKCarePlanActivity"
+- !private "OSC23OCKCarePlanActivityType"
+- !private "CSo16OCKCarePlanStore"
 - "PSo24OCKCarePlanStoreDelegate"
+- !private "CSo15OCKCareSchedule"
+- !private "Sq"
+- !private "Ps16RawRepresentable"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -386,6 +540,8 @@ depends-nominal:
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - "CX10me__BjEbIl14ViewController"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
 - !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:

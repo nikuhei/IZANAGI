@@ -103,12 +103,15 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @class UIUserNotificationSettings;
 @class UIApplication;
 @class NSObject;
+@class UILocalNotification;
 
 SWIFT_CLASS("_TtC9meロク_11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 @property (nonatomic, strong) UIUserNotificationSettings * _Nullable settings;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary * _Nullable)launchOptions;
+- (void)application:(UIApplication * _Nonnull)application didReceiveLocalNotification:(UILocalNotification * _Nonnull)notification;
+- (void)application:(UIApplication * _Nonnull)application handleActionWithIdentifier:(NSString * _Nullable)identifier forLocalNotification:(UILocalNotification * _Nonnull)notification completionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
@@ -122,11 +125,16 @@ SWIFT_CLASS("_TtC9meロク_11AppDelegate")
 SWIFT_CLASS("_TtC9meロク_24BaseCarePlanStoreManager")
 @interface BaseCarePlanStoreManager : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull CarePlanStoreURL;
+@property (nonatomic, readonly, copy) NSString * _Nonnull MeLogMedicationIdentifier;
+@property (nonatomic, readonly, copy) NSString * _Nonnull ThermoTitle;
+@property (nonatomic, readonly, copy) NSString * _Nonnull ThermoText;
+@property (nonatomic, readonly, copy) NSString * _Nonnull ThermoInstructions;
 @property (nonatomic, readonly, strong) OCKCarePlanStore * _Nonnull store;
 + (BaseCarePlanStoreManager * _Nonnull)sharedCarePlanStoreManager;
 + (void)setSharedCarePlanStoreManager:(BaseCarePlanStoreManager * _Nonnull)value;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (OCKCarePlanStore * _Nonnull)getCarePlanStore;
+- (NSString * _Nonnull)getMedicationIdentifier;
 - (void)updateView;
 @end
 

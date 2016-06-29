@@ -6,24 +6,56 @@ provides-nominal:
 provides-member:
 - ["CX10me__BjEbIl11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillEnterForeground"
-- "applicationWillTerminate"
-- "window"
-- "applicationDidBecomeActive"
-- "applicationWillResignActive"
 - "applicationDidEnterBackground"
+- "applicationWillTerminate"
+- "applicationWillResignActive"
+- "window"
 - "application"
+- "application"
+- "application"
+- "applicationDidBecomeActive"
+- "settings"
+- "applicationWillEnterForeground"
 depends-top-level:
-- "UIResponder"
-- "AnyObject"
-- "Bool"
 - "NSObject"
+- !private "UIApplicationLaunchOptionsLocalNotificationKey"
+- "UIUserNotificationType"
+- "UIResponder"
+- "UIUserNotificationSettings"
+- !private "NSDateComponents"
+- "Void"
+- !private "NSCalendar"
+- !private "StringLiteralType"
+- !private "print"
+- !private "!="
 - "UIApplication"
 - "UIApplicationDelegate"
-- "AppDelegate"
-- "UIWindow"
+- !private "Array"
+- !private "NSDate"
+- "String"
+- !private "NSTimeZone"
+- !private "UIAlertView"
 - !private "BooleanLiteralType"
+- "UIWindow"
+- "Bool"
+- !private "NSCalendarIdentifierGregorian"
+- "AnyObject"
+- "UILocalNotification"
+- "AppDelegate"
 depends-member:
+- !private ["Ps9AnyObject", "NSCalendar"]
+- !private ["Ps9AnyObject", "NSCalendarIdentifierGregorian"]
+- !private ["Ps9AnyObject", "NSDate"]
+- !private ["Ps9AnyObject", "NSTimeZone"]
+- !private ["Ps9AnyObject", "UIAlertView"]
+- !private ["Ps9AnyObject", "UIApplication"]
+- !private ["Ps9AnyObject", "UIApplicationLaunchOptionsLocalNotificationKey"]
+- !private ["Ps9AnyObject", "UILocalNotification"]
+- !private ["Ps9AnyObject", "UIUserNotificationSettings"]
+- !private ["Ps9AnyObject", "UIUserNotificationType"]
+- !private ["Ps9AnyObject", "addButtonWithTitle"]
+- !private ["Ps9AnyObject", "alertAction"]
+- !private ["Ps9AnyObject", "alertBody"]
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
 - ["Ps9AnyObject", "applicationDidEnterBackground"]
@@ -36,14 +68,44 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillEnterForeground"]
 - ["Ps9AnyObject", "applicationWillResignActive"]
 - ["Ps9AnyObject", "applicationWillTerminate"]
+- !private ["Ps9AnyObject", "calendar"]
+- !private ["Ps9AnyObject", "cancelLocalNotification"]
+- !private ["Ps9AnyObject", "components"]
+- !private ["Ps9AnyObject", "date"]
+- !private ["Ps9AnyObject", "defaultTimeZone"]
+- !private ["Ps9AnyObject", "fireDate"]
+- !private ["Ps9AnyObject", "hour"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "message"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "registerUserNotificationSettings"]
+- !private ["Ps9AnyObject", "repeatInterval"]
+- !private ["Ps9AnyObject", "scheduleLocalNotification"]
+- ["Ps9AnyObject", "settings"]
+- !private ["Ps9AnyObject", "sharedApplication"]
+- !private ["Ps9AnyObject", "show"]
+- !private ["Ps9AnyObject", "timeZone"]
+- !private ["Ps9AnyObject", "title"]
+- ["Ps9AnyObject", "type"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - ["CX10me__BjEbIl11AppDelegate", "AnyObject"]
 - ["CX10me__BjEbIl11AppDelegate", "Bool"]
+- !private ["CX10me__BjEbIl11AppDelegate", "NSCalendar"]
+- !private ["CX10me__BjEbIl11AppDelegate", "NSCalendarIdentifierGregorian"]
+- !private ["CX10me__BjEbIl11AppDelegate", "NSDate"]
+- !private ["CX10me__BjEbIl11AppDelegate", "NSDateComponents"]
 - ["CX10me__BjEbIl11AppDelegate", "NSObject"]
+- !private ["CX10me__BjEbIl11AppDelegate", "NSTimeZone"]
+- ["CX10me__BjEbIl11AppDelegate", "String"]
+- !private ["CX10me__BjEbIl11AppDelegate", "UIAlertView"]
 - ["CX10me__BjEbIl11AppDelegate", "UIApplication"]
+- !private ["CX10me__BjEbIl11AppDelegate", "UIApplicationLaunchOptionsLocalNotificationKey"]
+- ["CX10me__BjEbIl11AppDelegate", "UILocalNotification"]
+- ["CX10me__BjEbIl11AppDelegate", "UIUserNotificationSettings"]
+- ["CX10me__BjEbIl11AppDelegate", "UIUserNotificationType"]
 - ["CX10me__BjEbIl11AppDelegate", "UIWindow"]
+- ["CX10me__BjEbIl11AppDelegate", "Void"]
 - ["CX10me__BjEbIl11AppDelegate", "application"]
 - ["CX10me__BjEbIl11AppDelegate", "applicationDidBecomeActive"]
 - ["CX10me__BjEbIl11AppDelegate", "applicationDidEnterBackground"]
@@ -58,7 +120,36 @@ depends-member:
 - ["CX10me__BjEbIl11AppDelegate", "applicationWillTerminate"]
 - ["CX10me__BjEbIl11AppDelegate", "deinit"]
 - ["CX10me__BjEbIl11AppDelegate", "init"]
+- !private ["CX10me__BjEbIl11AppDelegate", "print"]
+- ["CX10me__BjEbIl11AppDelegate", "settings"]
+- ["CX10me__BjEbIl11AppDelegate", "type"]
 - ["CX10me__BjEbIl11AppDelegate", "window"]
+- !private ["Ps23ArrayLiteralConvertible", "Alert"]
+- !private ["Ps23ArrayLiteralConvertible", "Badge"]
+- !private ["Ps23ArrayLiteralConvertible", "Day"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Month"]
+- !private ["Ps23ArrayLiteralConvertible", "Sound"]
+- !private ["Ps23ArrayLiteralConvertible", "Year"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "NSCalendar"]
+- !private ["Ps11CVarArgType", "NSCalendarIdentifierGregorian"]
+- !private ["Ps11CVarArgType", "NSDate"]
+- !private ["Ps11CVarArgType", "NSTimeZone"]
+- !private ["Ps11CVarArgType", "UIAlertView"]
+- !private ["Ps11CVarArgType", "UIApplication"]
+- !private ["Ps11CVarArgType", "UIApplicationLaunchOptionsLocalNotificationKey"]
+- !private ["Ps11CVarArgType", "UILocalNotification"]
+- !private ["Ps11CVarArgType", "UIUserNotificationSettings"]
+- !private ["Ps11CVarArgType", "UIUserNotificationType"]
+- !private ["Ps11CVarArgType", "addButtonWithTitle"]
+- !private ["Ps11CVarArgType", "alertAction"]
+- !private ["Ps11CVarArgType", "alertBody"]
 - ["Ps11CVarArgType", "application"]
 - ["Ps11CVarArgType", "applicationDidBecomeActive"]
 - ["Ps11CVarArgType", "applicationDidEnterBackground"]
@@ -71,9 +162,53 @@ depends-member:
 - ["Ps11CVarArgType", "applicationWillEnterForeground"]
 - ["Ps11CVarArgType", "applicationWillResignActive"]
 - ["Ps11CVarArgType", "applicationWillTerminate"]
+- !private ["Ps11CVarArgType", "calendar"]
+- !private ["Ps11CVarArgType", "cancelLocalNotification"]
+- !private ["Ps11CVarArgType", "components"]
+- !private ["Ps11CVarArgType", "date"]
+- !private ["Ps11CVarArgType", "defaultTimeZone"]
+- !private ["Ps11CVarArgType", "fireDate"]
+- !private ["Ps11CVarArgType", "hour"]
 - ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "message"]
+- !private ["Ps11CVarArgType", "print"]
+- !private ["Ps11CVarArgType", "registerUserNotificationSettings"]
+- !private ["Ps11CVarArgType", "repeatInterval"]
+- !private ["Ps11CVarArgType", "scheduleLocalNotification"]
+- ["Ps11CVarArgType", "settings"]
+- !private ["Ps11CVarArgType", "sharedApplication"]
+- !private ["Ps11CVarArgType", "show"]
+- !private ["Ps11CVarArgType", "timeZone"]
+- !private ["Ps11CVarArgType", "title"]
+- ["Ps11CVarArgType", "type"]
 - ["Ps11CVarArgType", "window"]
 - ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "subscript"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "_DisabledRangeIndex"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "NSCalendar"]
+- !private ["Ps28CustomDebugStringConvertible", "NSCalendarIdentifierGregorian"]
+- !private ["Ps28CustomDebugStringConvertible", "NSDate"]
+- !private ["Ps28CustomDebugStringConvertible", "NSTimeZone"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIAlertView"]
+- !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
+- !private ["Ps28CustomDebugStringConvertible", "UIApplicationLaunchOptionsLocalNotificationKey"]
+- !private ["Ps28CustomDebugStringConvertible", "UILocalNotification"]
+- !private ["Ps28CustomDebugStringConvertible", "UIUserNotificationSettings"]
+- !private ["Ps28CustomDebugStringConvertible", "UIUserNotificationType"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "addButtonWithTitle"]
+- !private ["Ps28CustomDebugStringConvertible", "alertAction"]
+- !private ["Ps28CustomDebugStringConvertible", "alertBody"]
 - ["Ps28CustomDebugStringConvertible", "application"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
@@ -86,9 +221,47 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "applicationWillEnterForeground"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
+- !private ["Ps28CustomDebugStringConvertible", "calendar"]
+- !private ["Ps28CustomDebugStringConvertible", "cancelLocalNotification"]
+- !private ["Ps28CustomDebugStringConvertible", "components"]
+- !private ["Ps28CustomDebugStringConvertible", "date"]
+- !private ["Ps28CustomDebugStringConvertible", "defaultTimeZone"]
+- !private ["Ps28CustomDebugStringConvertible", "fireDate"]
+- !private ["Ps28CustomDebugStringConvertible", "hour"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "message"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "registerUserNotificationSettings"]
+- !private ["Ps28CustomDebugStringConvertible", "repeatInterval"]
+- !private ["Ps28CustomDebugStringConvertible", "scheduleLocalNotification"]
+- ["Ps28CustomDebugStringConvertible", "settings"]
+- !private ["Ps28CustomDebugStringConvertible", "sharedApplication"]
+- !private ["Ps28CustomDebugStringConvertible", "show"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "timeZone"]
+- !private ["Ps28CustomDebugStringConvertible", "title"]
+- ["Ps28CustomDebugStringConvertible", "type"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "NSCalendar"]
+- !private ["Ps23CustomStringConvertible", "NSCalendarIdentifierGregorian"]
+- !private ["Ps23CustomStringConvertible", "NSDate"]
+- !private ["Ps23CustomStringConvertible", "NSTimeZone"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIAlertView"]
+- !private ["Ps23CustomStringConvertible", "UIApplication"]
+- !private ["Ps23CustomStringConvertible", "UIApplicationLaunchOptionsLocalNotificationKey"]
+- !private ["Ps23CustomStringConvertible", "UILocalNotification"]
+- !private ["Ps23CustomStringConvertible", "UIUserNotificationSettings"]
+- !private ["Ps23CustomStringConvertible", "UIUserNotificationType"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addButtonWithTitle"]
+- !private ["Ps23CustomStringConvertible", "alertAction"]
+- !private ["Ps23CustomStringConvertible", "alertBody"]
 - ["Ps23CustomStringConvertible", "application"]
 - ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
 - ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
@@ -101,9 +274,65 @@ depends-member:
 - ["Ps23CustomStringConvertible", "applicationWillEnterForeground"]
 - ["Ps23CustomStringConvertible", "applicationWillResignActive"]
 - ["Ps23CustomStringConvertible", "applicationWillTerminate"]
+- !private ["Ps23CustomStringConvertible", "calendar"]
+- !private ["Ps23CustomStringConvertible", "cancelLocalNotification"]
+- !private ["Ps23CustomStringConvertible", "components"]
+- !private ["Ps23CustomStringConvertible", "date"]
+- !private ["Ps23CustomStringConvertible", "defaultTimeZone"]
+- !private ["Ps23CustomStringConvertible", "fireDate"]
+- !private ["Ps23CustomStringConvertible", "hour"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "message"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "registerUserNotificationSettings"]
+- !private ["Ps23CustomStringConvertible", "repeatInterval"]
+- !private ["Ps23CustomStringConvertible", "scheduleLocalNotification"]
+- ["Ps23CustomStringConvertible", "settings"]
+- !private ["Ps23CustomStringConvertible", "sharedApplication"]
+- !private ["Ps23CustomStringConvertible", "show"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "timeZone"]
+- !private ["Ps23CustomStringConvertible", "title"]
+- ["Ps23CustomStringConvertible", "type"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "Generator"]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "SubSequence"]
+- !private ["Vs10Dictionary", "_Element"]
+- !private ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Vs15DictionaryIndex", "Distance"]
+- !private ["Vs15DictionaryIndex", "_DisabledRangeIndex"]
+- !private ["Ps28DictionaryLiteralConvertible", "Generator"]
+- !private ["Ps28DictionaryLiteralConvertible", "Index"]
+- !private ["Ps28DictionaryLiteralConvertible", "SubSequence"]
+- !private ["Ps28DictionaryLiteralConvertible", "_Element"]
+- !private ["Ps28DictionaryLiteralConvertible", "subscript"]
+- !private ["Ps9Equatable", "Alert"]
+- !private ["Ps9Equatable", "Badge"]
+- !private ["Ps9Equatable", "Day"]
+- !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "Element"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "Month"]
+- !private ["Ps9Equatable", "NSCalendar"]
+- !private ["Ps9Equatable", "NSCalendarIdentifierGregorian"]
+- !private ["Ps9Equatable", "NSDate"]
+- !private ["Ps9Equatable", "NSTimeZone"]
+- !private ["Ps9Equatable", "Sound"]
+- !private ["Ps9Equatable", "UIAlertView"]
+- !private ["Ps9Equatable", "UIApplication"]
+- !private ["Ps9Equatable", "UIApplicationLaunchOptionsLocalNotificationKey"]
+- !private ["Ps9Equatable", "UILocalNotification"]
+- !private ["Ps9Equatable", "UIUserNotificationSettings"]
+- !private ["Ps9Equatable", "UIUserNotificationType"]
+- !private ["Ps9Equatable", "Year"]
+- !private ["Ps9Equatable", "_DisabledRangeIndex"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addButtonWithTitle"]
+- !private ["Ps9Equatable", "alertAction"]
+- !private ["Ps9Equatable", "alertBody"]
 - ["Ps9Equatable", "application"]
 - ["Ps9Equatable", "applicationDidBecomeActive"]
 - ["Ps9Equatable", "applicationDidEnterBackground"]
@@ -116,9 +345,46 @@ depends-member:
 - ["Ps9Equatable", "applicationWillEnterForeground"]
 - ["Ps9Equatable", "applicationWillResignActive"]
 - ["Ps9Equatable", "applicationWillTerminate"]
+- !private ["Ps9Equatable", "calendar"]
+- !private ["Ps9Equatable", "cancelLocalNotification"]
+- !private ["Ps9Equatable", "components"]
+- !private ["Ps9Equatable", "date"]
+- !private ["Ps9Equatable", "defaultTimeZone"]
+- !private ["Ps9Equatable", "fireDate"]
+- !private ["Ps9Equatable", "hour"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "message"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "registerUserNotificationSettings"]
+- !private ["Ps9Equatable", "repeatInterval"]
+- !private ["Ps9Equatable", "scheduleLocalNotification"]
+- ["Ps9Equatable", "settings"]
+- !private ["Ps9Equatable", "sharedApplication"]
+- !private ["Ps9Equatable", "show"]
+- !private ["Ps9Equatable", "timeZone"]
+- !private ["Ps9Equatable", "title"]
+- ["Ps9Equatable", "type"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps16ForwardIndexType", "_DisabledRangeIndex"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "NSCalendar"]
+- !private ["Ps8Hashable", "NSCalendarIdentifierGregorian"]
+- !private ["Ps8Hashable", "NSDate"]
+- !private ["Ps8Hashable", "NSTimeZone"]
+- !private ["Ps8Hashable", "UIAlertView"]
+- !private ["Ps8Hashable", "UIApplication"]
+- !private ["Ps8Hashable", "UIApplicationLaunchOptionsLocalNotificationKey"]
+- !private ["Ps8Hashable", "UILocalNotification"]
+- !private ["Ps8Hashable", "UIUserNotificationSettings"]
+- !private ["Ps8Hashable", "UIUserNotificationType"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addButtonWithTitle"]
+- !private ["Ps8Hashable", "alertAction"]
+- !private ["Ps8Hashable", "alertBody"]
 - ["Ps8Hashable", "application"]
 - ["Ps8Hashable", "applicationDidBecomeActive"]
 - ["Ps8Hashable", "applicationDidEnterBackground"]
@@ -131,14 +397,95 @@ depends-member:
 - ["Ps8Hashable", "applicationWillEnterForeground"]
 - ["Ps8Hashable", "applicationWillResignActive"]
 - ["Ps8Hashable", "applicationWillTerminate"]
+- !private ["Ps8Hashable", "calendar"]
+- !private ["Ps8Hashable", "cancelLocalNotification"]
+- !private ["Ps8Hashable", "components"]
+- !private ["Ps8Hashable", "date"]
+- !private ["Ps8Hashable", "defaultTimeZone"]
+- !private ["Ps8Hashable", "fireDate"]
+- !private ["Ps8Hashable", "hour"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "message"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "registerUserNotificationSettings"]
+- !private ["Ps8Hashable", "repeatInterval"]
+- !private ["Ps8Hashable", "scheduleLocalNotification"]
+- ["Ps8Hashable", "settings"]
+- !private ["Ps8Hashable", "sharedApplication"]
+- !private ["Ps8Hashable", "show"]
+- !private ["Ps8Hashable", "timeZone"]
+- !private ["Ps8Hashable", "title"]
+- ["Ps8Hashable", "type"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["CSo10NSCalendar", "components"]
+- !private ["CSo10NSCalendar", "init"]
+- !private ["VSC14NSCalendarUnit", "Day"]
+- !private ["VSC14NSCalendarUnit", "Element"]
+- !private ["VSC14NSCalendarUnit", "Month"]
+- !private ["VSC14NSCalendarUnit", "Year"]
+- !private ["PSo8NSCoding", "addButtonWithTitle"]
+- !private ["PSo8NSCoding", "alertAction"]
+- !private ["PSo8NSCoding", "alertBody"]
+- !private ["PSo8NSCoding", "calendar"]
+- !private ["PSo8NSCoding", "components"]
+- !private ["PSo8NSCoding", "date"]
+- !private ["PSo8NSCoding", "defaultTimeZone"]
+- !private ["PSo8NSCoding", "fireDate"]
+- !private ["PSo8NSCoding", "hour"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "message"]
+- !private ["PSo8NSCoding", "repeatInterval"]
+- !private ["PSo8NSCoding", "show"]
+- !private ["PSo8NSCoding", "timeZone"]
+- !private ["PSo8NSCoding", "title"]
+- !private ["PSo9NSCopying", "alertAction"]
+- !private ["PSo9NSCopying", "alertBody"]
+- !private ["PSo9NSCopying", "calendar"]
+- !private ["PSo9NSCopying", "components"]
+- !private ["PSo9NSCopying", "date"]
+- !private ["PSo9NSCopying", "defaultTimeZone"]
+- !private ["PSo9NSCopying", "fireDate"]
+- !private ["PSo9NSCopying", "hour"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "repeatInterval"]
+- !private ["PSo9NSCopying", "timeZone"]
+- !private ["CSo6NSDate", "init"]
+- !private ["CSo16NSDateComponents", "calendar"]
+- !private ["CSo16NSDateComponents", "date"]
+- !private ["CSo16NSDateComponents", "hour"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "NSCalendar"]
+- !private ["CSo8NSObject", "NSCalendarIdentifierGregorian"]
+- !private ["CSo8NSObject", "NSDate"]
+- !private ["CSo8NSObject", "NSDateComponents"]
 - ["CSo8NSObject", "NSObject"]
+- !private ["CSo8NSObject", "NSTimeZone"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIAlertView"]
 - ["CSo8NSObject", "UIApplication"]
+- !private ["CSo8NSObject", "UIApplicationLaunchOptionsLocalNotificationKey"]
+- ["CSo8NSObject", "UILocalNotification"]
+- ["CSo8NSObject", "UIUserNotificationSettings"]
+- ["CSo8NSObject", "UIUserNotificationType"]
 - ["CSo8NSObject", "UIWindow"]
+- ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "addButtonWithTitle"]
+- !private ["CSo8NSObject", "alertAction"]
+- !private ["CSo8NSObject", "alertBody"]
 - ["CSo8NSObject", "application"]
 - ["CSo8NSObject", "applicationDidBecomeActive"]
 - ["CSo8NSObject", "applicationDidEnterBackground"]
@@ -151,8 +498,40 @@ depends-member:
 - ["CSo8NSObject", "applicationWillEnterForeground"]
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
+- !private ["CSo8NSObject", "calendar"]
+- !private ["CSo8NSObject", "cancelLocalNotification"]
+- !private ["CSo8NSObject", "components"]
+- !private ["CSo8NSObject", "date"]
+- !private ["CSo8NSObject", "defaultTimeZone"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "fireDate"]
+- !private ["CSo8NSObject", "hour"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "message"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "registerUserNotificationSettings"]
+- !private ["CSo8NSObject", "repeatInterval"]
+- !private ["CSo8NSObject", "scheduleLocalNotification"]
+- ["CSo8NSObject", "settings"]
+- !private ["CSo8NSObject", "sharedApplication"]
+- !private ["CSo8NSObject", "show"]
+- !private ["CSo8NSObject", "timeZone"]
+- !private ["CSo8NSObject", "title"]
+- ["CSo8NSObject", "type"]
 - ["CSo8NSObject", "window"]
+- !private ["PSo16NSObjectProtocol", "NSCalendar"]
+- !private ["PSo16NSObjectProtocol", "NSCalendarIdentifierGregorian"]
+- !private ["PSo16NSObjectProtocol", "NSDate"]
+- !private ["PSo16NSObjectProtocol", "NSTimeZone"]
+- !private ["PSo16NSObjectProtocol", "UIAlertView"]
+- !private ["PSo16NSObjectProtocol", "UIApplication"]
+- !private ["PSo16NSObjectProtocol", "UIApplicationLaunchOptionsLocalNotificationKey"]
+- !private ["PSo16NSObjectProtocol", "UILocalNotification"]
+- !private ["PSo16NSObjectProtocol", "UIUserNotificationSettings"]
+- !private ["PSo16NSObjectProtocol", "UIUserNotificationType"]
+- !private ["PSo16NSObjectProtocol", "addButtonWithTitle"]
+- !private ["PSo16NSObjectProtocol", "alertAction"]
+- !private ["PSo16NSObjectProtocol", "alertBody"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -165,9 +544,106 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
+- !private ["PSo16NSObjectProtocol", "calendar"]
+- !private ["PSo16NSObjectProtocol", "cancelLocalNotification"]
+- !private ["PSo16NSObjectProtocol", "components"]
+- !private ["PSo16NSObjectProtocol", "date"]
+- !private ["PSo16NSObjectProtocol", "defaultTimeZone"]
+- !private ["PSo16NSObjectProtocol", "fireDate"]
+- !private ["PSo16NSObjectProtocol", "hour"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "message"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "registerUserNotificationSettings"]
+- !private ["PSo16NSObjectProtocol", "repeatInterval"]
+- !private ["PSo16NSObjectProtocol", "scheduleLocalNotification"]
+- ["PSo16NSObjectProtocol", "settings"]
+- !private ["PSo16NSObjectProtocol", "sharedApplication"]
+- !private ["PSo16NSObjectProtocol", "show"]
+- !private ["PSo16NSObjectProtocol", "timeZone"]
+- !private ["PSo16NSObjectProtocol", "title"]
+- ["PSo16NSObjectProtocol", "type"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "calendar"]
+- !private ["PSo14NSSecureCoding", "components"]
+- !private ["PSo14NSSecureCoding", "date"]
+- !private ["PSo14NSSecureCoding", "defaultTimeZone"]
+- !private ["PSo14NSSecureCoding", "hour"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo10NSTimeZone", "defaultTimeZone"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- !private ["Ps13OptionSetType", "Alert"]
+- !private ["Ps13OptionSetType", "Badge"]
+- !private ["Ps13OptionSetType", "Day"]
+- !private ["Ps13OptionSetType", "Element"]
+- !private ["Ps13OptionSetType", "Month"]
+- !private ["Ps13OptionSetType", "Sound"]
+- !private ["Ps13OptionSetType", "Year"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps16RawRepresentable", "Alert"]
+- !private ["Ps16RawRepresentable", "Badge"]
+- !private ["Ps16RawRepresentable", "Day"]
+- !private ["Ps16RawRepresentable", "Element"]
+- !private ["Ps16RawRepresentable", "Month"]
+- !private ["Ps16RawRepresentable", "Sound"]
+- !private ["Ps16RawRepresentable", "Year"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "subscript"]
+- !private ["Ps14SetAlgebraType", "Alert"]
+- !private ["Ps14SetAlgebraType", "Badge"]
+- !private ["Ps14SetAlgebraType", "Day"]
+- !private ["Ps14SetAlgebraType", "Element"]
+- !private ["Ps14SetAlgebraType", "Month"]
+- !private ["Ps14SetAlgebraType", "Sound"]
+- !private ["Ps14SetAlgebraType", "Year"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Vs5Slice", "Generator"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["PSo29UIAccessibilityIdentification", "addButtonWithTitle"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "message"]
+- !private ["PSo29UIAccessibilityIdentification", "show"]
+- !private ["PSo29UIAccessibilityIdentification", "title"]
+- !private ["CSo11UIAlertView", "addButtonWithTitle"]
+- !private ["CSo11UIAlertView", "init"]
+- !private ["CSo11UIAlertView", "message"]
+- !private ["CSo11UIAlertView", "show"]
+- !private ["CSo11UIAlertView", "title"]
+- !private ["PSo12UIAppearance", "addButtonWithTitle"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "message"]
+- !private ["PSo12UIAppearance", "show"]
+- !private ["PSo12UIAppearance", "title"]
+- !private ["PSo21UIAppearanceContainer", "addButtonWithTitle"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "message"]
+- !private ["PSo21UIAppearanceContainer", "show"]
+- !private ["PSo21UIAppearanceContainer", "title"]
+- !private ["CSo13UIApplication", "cancelLocalNotification"]
+- !private ["CSo13UIApplication", "registerUserNotificationSettings"]
+- !private ["CSo13UIApplication", "scheduleLocalNotification"]
+- !private ["CSo13UIApplication", "sharedApplication"]
+- !private ["PSo21UIApplicationDelegate", "NSCalendar"]
+- !private ["PSo21UIApplicationDelegate", "NSCalendarIdentifierGregorian"]
+- !private ["PSo21UIApplicationDelegate", "NSDate"]
+- !private ["PSo21UIApplicationDelegate", "NSTimeZone"]
+- !private ["PSo21UIApplicationDelegate", "UIAlertView"]
+- !private ["PSo21UIApplicationDelegate", "UIApplication"]
+- !private ["PSo21UIApplicationDelegate", "UIApplicationLaunchOptionsLocalNotificationKey"]
+- !private ["PSo21UIApplicationDelegate", "UILocalNotification"]
+- !private ["PSo21UIApplicationDelegate", "UIUserNotificationSettings"]
+- !private ["PSo21UIApplicationDelegate", "UIUserNotificationType"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -180,13 +656,51 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
 - ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- !private ["PSo21UIApplicationDelegate", "print"]
+- !private ["PSo21UIApplicationDelegate", "settings"]
+- !private ["PSo21UIApplicationDelegate", "type"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
+- !private ["PSo17UICoordinateSpace", "addButtonWithTitle"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "message"]
+- !private ["PSo17UICoordinateSpace", "show"]
+- !private ["PSo17UICoordinateSpace", "title"]
+- !private ["PSo13UIDynamicItem", "addButtonWithTitle"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "message"]
+- !private ["PSo13UIDynamicItem", "show"]
+- !private ["PSo13UIDynamicItem", "title"]
+- !private ["PSo18UIFocusEnvironment", "addButtonWithTitle"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "message"]
+- !private ["PSo18UIFocusEnvironment", "show"]
+- !private ["PSo18UIFocusEnvironment", "title"]
+- !private ["CSo19UILocalNotification", "alertAction"]
+- !private ["CSo19UILocalNotification", "alertBody"]
+- !private ["CSo19UILocalNotification", "deinit"]
+- !private ["CSo19UILocalNotification", "fireDate"]
+- !private ["CSo19UILocalNotification", "init"]
+- !private ["CSo19UILocalNotification", "repeatInterval"]
+- !private ["CSo19UILocalNotification", "timeZone"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "NSCalendar"]
+- !private ["CSo11UIResponder", "NSCalendarIdentifierGregorian"]
+- !private ["CSo11UIResponder", "NSDate"]
+- !private ["CSo11UIResponder", "NSDateComponents"]
 - ["CSo11UIResponder", "NSObject"]
+- !private ["CSo11UIResponder", "NSTimeZone"]
+- ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIAlertView"]
 - ["CSo11UIResponder", "UIApplication"]
+- !private ["CSo11UIResponder", "UIApplicationLaunchOptionsLocalNotificationKey"]
+- ["CSo11UIResponder", "UILocalNotification"]
+- ["CSo11UIResponder", "UIUserNotificationSettings"]
+- ["CSo11UIResponder", "UIUserNotificationType"]
 - ["CSo11UIResponder", "UIWindow"]
+- ["CSo11UIResponder", "Void"]
+- !private ["CSo11UIResponder", "addButtonWithTitle"]
 - ["CSo11UIResponder", "application"]
 - ["CSo11UIResponder", "applicationDidBecomeActive"]
 - ["CSo11UIResponder", "applicationDidEnterBackground"]
@@ -199,21 +713,139 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillEnterForeground"]
 - ["CSo11UIResponder", "applicationWillResignActive"]
 - ["CSo11UIResponder", "applicationWillTerminate"]
+- !private ["CSo11UIResponder", "cancelLocalNotification"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "message"]
+- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "registerUserNotificationSettings"]
+- !private ["CSo11UIResponder", "scheduleLocalNotification"]
+- ["CSo11UIResponder", "settings"]
+- !private ["CSo11UIResponder", "sharedApplication"]
+- !private ["CSo11UIResponder", "show"]
+- !private ["CSo11UIResponder", "title"]
+- ["CSo11UIResponder", "type"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
+- !private ["PSo18UITraitEnvironment", "addButtonWithTitle"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "message"]
+- !private ["PSo18UITraitEnvironment", "show"]
+- !private ["PSo18UITraitEnvironment", "title"]
+- !private ["CSo26UIUserNotificationSettings", "init"]
+- !private ["VSC22UIUserNotificationType", "Alert"]
+- !private ["VSC22UIUserNotificationType", "Badge"]
+- !private ["VSC22UIUserNotificationType", "Element"]
+- !private ["VSC22UIUserNotificationType", "Sound"]
+- !private ["CSo6UIView", "addButtonWithTitle"]
+- !private ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "message"]
+- !private ["CSo6UIView", "show"]
+- !private ["CSo6UIView", "title"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "addButtonWithTitle"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "message"]
+- !private ["Ps12_Reflectable", "show"]
+- !private ["Ps12_Reflectable", "subscript"]
+- !private ["Ps12_Reflectable", "title"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 depends-nominal:
 - "Ps9AnyObject"
 - "CX10me__BjEbIl11AppDelegate"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
 - "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- !private "Vs15DictionaryIndex"
+- !private "Ps28DictionaryLiteralConvertible"
 - "Ps9Equatable"
+- !private "Ps16ForwardIndexType"
+- !private "Ps13GeneratorType"
 - "Ps8Hashable"
+- !private "SQ"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Si"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
+- !private "CSo10NSCalendar"
+- !private "VSC14NSCalendarUnit"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSDate"
+- !private "CSo16NSDateComponents"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo10NSTimeZone"
+- "Ps21NilLiteralConvertible"
+- !private "Ps13OptionSetType"
+- "Sq"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Ps14SetAlgebraType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Vs5Slice"
+- !private "Ps10Strideable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "CSo11UIAlertView"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
+- !private "CSo13UIApplication"
 - "PSo21UIApplicationDelegate"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
+- !private "CSo19UILocalNotification"
 - "CSo11UIResponder"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo26UIUserNotificationSettings"
+- !private "VSC22UIUserNotificationType"
+- !private "CSo6UIView"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps22_RandomAccessAmbiguity"
+- "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
 depends-dynamic-lookup:
 depends-external:
 - "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
@@ -224,4 +856,26 @@ depends-external:
 - "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
 - "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
 - "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
-interface-hash: "eb6deb7e97b205db2b1f8c4c6c87743c"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKDocument.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKConnectViewController.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKContact.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKGroupedBarChartView.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKInsightsViewController.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKBarChart.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKBarSeries.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKChart.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKMessageItem.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKInsightItem.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKSymptomTrackerViewController.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKCareCardViewController.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKCarePlanStore.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKCarePlanEventResult.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKCarePlanEvent.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKCarePlanActivity.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKCareSchedule.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/NSDateComponents+CarePlan.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/OCKDefines.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Headers/CareKit.h"
+- "/Users/nishizawaikutaira/Documents/repositories/application_package/IZANAGI/ios_application/me\u30ED\u30AF\u3099/DerivedData/me\u30ED\u30AF\u3099/Build/Products/Debug-iphoneos/CareKit.framework/Modules/module.modulemap"
+- "/Users/nishizawaikutaira/developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Contacts.swiftmodule"
+interface-hash: "4da9b4c85c8a2456502331f142f52c0c"

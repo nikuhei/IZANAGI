@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--ほっぺちゃんの部屋-->
+        <!--マイルーム-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="meロク_" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,13 +20,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OoG-Jr-hdV">
                                 <rect key="frame" x="190" y="72" width="220" height="168"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7jL-Kf-kyw">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7jL-Kf-kyw">
                                         <rect key="frame" x="0.0" y="0.0" width="220" height="168"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Obd-Yh-kHP">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Obd-Yh-kHP">
                                                 <rect key="frame" x="0.0" y="0.0" width="220" height="168"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="risu.png" translatesAutoresizingMaskIntoConstraints="NO" id="bav-Ur-snY">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="risu.png" translatesAutoresizingMaskIntoConstraints="NO" id="bav-Ur-snY">
                                                         <rect key="frame" x="0.0" y="0.0" width="220" height="168"/>
                                                     </imageView>
                                                 </subviews>
@@ -58,7 +58,7 @@
                             <constraint firstItem="OoG-Jr-hdV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-135" id="vKy-qM-lzn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="ほっぺちゃんの部屋" id="Y3V-7J-6lN"/>
+                    <navigationItem key="navigationItem" title="マイルーム" id="Y3V-7J-6lN"/>
                     <connections>
                         <outlet property="greetingButton" destination="3hV-fk-M5C" id="fwB-k9-Fft"/>
                         <outlet property="greetingText" destination="wes-7g-0da" id="SyY-gQ-w2H"/>
